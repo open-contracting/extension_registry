@@ -60,4 +60,4 @@ Compile entries:
 
     python compile.py
 
-The _compile.py_ script will generate two non version-controlled files, **_extensions.json_** and **_extensions.js_**, which are the reference files that OCDS needs to build the documentation on extensions.
+The _compile.py_ script will generate two non-version-controlled files, **_extensions.json_** and **_extensions.js_**, which are the reference files that OCDS needs to build the documentation on extensions.
