@@ -15,7 +15,7 @@ deploy:
   script: curl https://raw.githubusercontent.com/OpenDataServices/opendataservices-deploy/master/open-contracting-extension_registry-deploy.sh | bash -
   on: # https://docs.travis-ci.com/user/deployment#Conditional-Releases-with-on%3A
     all_branches: true
-    condition: $TRAVIS_PULL_REQUEST = false && ($TRAVIS_BRANCH = master || $TRAVIS_BRANCH = ppp || $TRAVIS_BRANCH = v1.1 || $TRAVIS_BRANCH = v1.1.1)
+    condition: $TRAVIS_PULL_REQUEST = false && ($TRAVIS_BRANCH = master || $TRAVIS_BRANCH = ppp || $TRAVIS_BRANCH = v1.1 || $TRAVIS_BRANCH = v1.1.1 || $TRAVIS_BRANCH = v1.1.3)
 install:
   - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
 script:
