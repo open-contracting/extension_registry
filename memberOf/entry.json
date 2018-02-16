@@ -1,0 +1,14 @@
+[{
+    "category": "parties",
+    "documentationUrl": {
+        "en": "https://github.com/open-contracting/ocds_memberOf_extension/blob/master/README.md"
+    },
+    "name": {
+        "en": "Member Of"
+    }, 
+    "core": false,
+    "url": "https://raw.githubusercontent.com/open-contracting/ocds_memberOf_extension/master/extension.json",
+    "description": {
+        "en": "The party.memberOf property can be used to indicate the relationship between a party and some other party, association or grouping."
+    }
+}]
