@@ -1,24 +1,10 @@
-sudo: false
 language: python
 cache: pip
 python:
   - "3.6"
-env:
-  - BASEDIR="https://raw.githubusercontent.com/open-contracting/standard-maintenance-scripts/master"
-addons:
-  apt:
-    packages:
-    - lftp
-deploy:
-  skip_cleanup: true # https://docs.travis-ci.com/user/deployment#Uploading-Files
-  provider: script # https://docs.travis-ci.com/user/deployment/script/
-  script: curl https://raw.githubusercontent.com/OpenDataServices/opendataservices-deploy/master/open-contracting-extension_registry-deploy.sh | bash -
-  on: # https://docs.travis-ci.com/user/deployment#Conditional-Releases-with-on%3A
-    all_branches: true
-    condition: $TRAVIS_PULL_REQUEST = false && ($TRAVIS_BRANCH = master || $TRAVIS_BRANCH = ppp || $TRAVIS_BRANCH = v1.1 || $TRAVIS_BRANCH = v1.1.1)
 install:
-  - curl -s -S $BASEDIR/tests/install.sh | bash -
+  - pip install -r requirements.txt
+  - pip install pytest
 script:
-  - curl -s -S $BASEDIR/tests/script.sh | bash -
-  - python compile.py
-  - mkdir build; mv extensions.* build
+  - pytest --pyargs ocdsextensionregistry.tests
+  - python validate.py
