@@ -1,55 +1,24 @@
-"""
-Validates all entry.json files and gathers them into extensions.js and extensions.json files.
-"""
-
-import datetime
-import glob
-import json
+import ocdsextensionregistry.compile
 import os
 
-from jsonschema import FormatChecker
-from jsonschema.validators import Draft4Validator as validator
 
-current_path = os.path.dirname(os.path.realpath(__file__))
+if __name__ == "__main__":
+    ocdsextensionregistry.compile.registry_csv_filename = \
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'extensions.csv')
 
-gathered_json = {
-    "last_updated": str(datetime.datetime.utcnow()),
-    "extensions": []
-}
+    ocdsextensionregistry.compile.extensions_repositories_folder = \
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "extensions_repositories")
+    if not os.path.isdir(ocdsextensionregistry.compile.extensions_repositories_folder):
+        os.makedirs(ocdsextensionregistry.compile.extensions_repositories_folder)
 
-with open('entry-schema.json') as fp:
-    entry_validator = validator(json.load(fp), format_checker=FormatChecker())
+    ocdsextensionregistry.compile.output_folder = \
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
+    if not os.path.isdir(ocdsextensionregistry.compile.output_folder):
+        os.makedirs(ocdsextensionregistry.compile.output_folder)
 
-exit_status = 0
+    ocdsextensionregistry.compile.legacy_output_folder = \
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "legacy_output")
+    if not os.path.isdir(ocdsextensionregistry.compile.legacy_output_folder):
+        os.makedirs(ocdsextensionregistry.compile.legacy_output_folder)
 
-for directory in glob.glob(current_path + "/*"):
-    if os.path.isdir(directory):
-        entry_json_file = os.path.join(directory, "entry.json")
-
-        with open(entry_json_file) as fp:
-            entry_obj = json.load(fp)
-            if entry_validator.is_valid(entry_obj):
-
-                # This loop is temporary only so docs work while transistioning onto new format
-                for item in entry_obj:
-                    item["documentation_url"] = item["documentationUrl"]["en"]
-                    item["url"] = item["url"][:-14]
-                # endloop
-
-                gathered_json["extensions"].append(entry_obj[0])
-            else:
-                print('ERROR: Skipping extension {}: entry.json is not valid'.format(directory))
-                exit_status = 1
-
-full_json = json.dumps(gathered_json)
-
-extensions_json_path = os.path.join(current_path, "extensions.json")
-extensions_js_path = os.path.join(current_path, "extensions.js")
-
-with open(extensions_json_path, "w+") as extensions_json:
-    extensions_json.write(full_json)
-
-with open(extensions_js_path, "w+") as extensions_json:
-    extensions_json.write("extensions_callback(" + full_json + ")")
-
-exit(exit_status)
+    ocdsextensionregistry.compile.compile_registry()

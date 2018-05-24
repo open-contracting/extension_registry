@@ -1,2 +1,4 @@
-/extensions.js
-/extensions.json
+/extensions_repositories
+/output
+/legacy_output
+.pytest_cache
