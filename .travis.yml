@@ -10,11 +10,11 @@ env:
 install:
   - pip install -r requirements.txt
   - pip install pytest
-  - curl -s -S $BASEDIR/tests/install.sh | bash -
+  - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
 script:
   - PYTHONPATH=$PYTHONPATH:.  pytest --pyargs ocdsextensionregistry.tests
   - python validate.py
-  - curl -s -S $BASEDIR/tests/script.sh | bash -
+  - curl -s -S --retry 3 $BASEDIR/tests/script.sh | bash -
 #  - python compile.py
 
 # For previous way of doing the extension registry, we used Travis to deploy the built files.
