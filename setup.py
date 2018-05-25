@@ -7,5 +7,9 @@ setup(name='ocdsextensionregistry',
       description='Process data in OCDS extension repository',
       author='Open Contracting',
       url='',
-      packages=['ocdsextensionregistry']
+      packages=['ocdsextensionregistry'],
+      package_data={'ocdsextensionregistry': [
+              'extension-schema.json'
+          ]},
+      include_package_data=True,
       )

@@ -20,3 +20,38 @@ def test_dupe_id():
     with pytest.raises(Exception) as excinfo:
         ocdsextensionregistry.validate.validate_registry_csv()
     assert 'Extension signatories is already registered! (Duplicate is on line 3)' in str(excinfo.value)
+
+
+def test_no_category():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_no_category.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert '\'\' is too short' in str(excinfo.value)
+
+
+def test_no_core():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_no_core.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert '\'\' is not one of' in str(excinfo.value)
+
+
+def test_bad_core():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_bad_core.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert '\'cats\' is not one of ' in str(excinfo.value)
+
+
+def test_bad_id_space():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_bad_id_space.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert '\'haz signatories\' does not match' in str(excinfo.value)
+
+
+def test_bad_id_questionmark():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_bad_id_questionmark.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert '\'signatories?\' does not match' in str(excinfo.value)

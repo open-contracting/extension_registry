@@ -1,6 +1,5 @@
 import csv
-from .models import ExtensionModel
-from .util import string_to_boolean
+from .models import ExtensionCSVModel
 import os
 import subprocess
 import datetime
@@ -44,12 +43,14 @@ def _load_data():
                     if extension_id in _extensions.keys():
                         raise Exception("Extension %s is already registered! (Duplicate is on line %d)" % (
                             extension_id, reader.line_num))
-                    extension_model = ExtensionModel(
+                    extension_csv_model = ExtensionCSVModel(
+                        extension_id=row[0],
                         repository_url=row[1],
                         category=row[2],
-                        core=string_to_boolean(row[3])
+                        core=row[3]
                     )
-                    _extensions[extension_id] = extension_model
+                    extension_csv_model.validate()
+                    _extensions[extension_id] = extension_csv_model.get_extension_model()
 
 
 def _fetch_extensions():

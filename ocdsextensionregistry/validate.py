@@ -1,6 +1,5 @@
 import csv
-from .models import ExtensionModel
-from .util import string_to_boolean
+from .models import ExtensionCSVModel
 
 registry_csv_filename = None
 
@@ -17,10 +16,11 @@ def validate_registry_csv():
                 if extension_id:
                     if extension_id in extensions.keys():
                         raise Exception("Extension %s is already registered! (Duplicate is on line %d)" % (extension_id, reader.line_num ))
-                    extension_model = ExtensionModel(
+                    extension_csv_model = ExtensionCSVModel(
+                        extension_id=row[0],
                         repository_url=row[1],
                         category=row[2],
-                        core=string_to_boolean(row[3])
+                        core=row[3]
                     )
-                    extension_model.validate_extension_registry_data_only()
-                    extensions[extension_id] = extension_model
+                    extension_csv_model.validate()
+                    extensions[extension_id] = extension_csv_model

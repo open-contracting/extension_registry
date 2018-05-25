@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "extension",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]*$"
+    },
+    "repository_url": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "core": {
+      "type": "string",
+      "enum": ["true", "false", "True", "False"]
+    }
+  },
+  "required": ["id", "repository_url", "category", "core"]
+}

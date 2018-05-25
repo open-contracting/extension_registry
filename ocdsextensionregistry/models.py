@@ -1,6 +1,50 @@
+from jsonschema import FormatChecker
+from jsonschema.validators import Draft4Validator as validator
+import os
+import json
+from .util import string_to_boolean
+
+
+class ExtensionCSVModel:
+    """Model representing details of the extension as raw values as they are presented in the CSV.
+
+    This lets us do more validation."""
+
+    def __init__(self, extension_id, repository_url, core, category):
+        self.extension_id = extension_id
+        self.repository_url = repository_url
+        self.core = core
+        self.category = category
+
+    def validate(self):
+        data = {
+            "id": self.extension_id,
+            "repository_url": self.repository_url,
+            "category": self.category,
+            "core": self.core,
+        }
+
+        with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), "extension-schema.json"), "r") as fp:
+            schema = json.load(fp)
+
+        for error in validator(schema, format_checker=FormatChecker()).iter_errors(data):
+            raise Exception(self.extension_id + ": " + error.message)
+
+        if self.repository_url[:19] != 'https://github.com/':
+            raise Exception(self.extension_id + ": Repository must be on GitHub")
+
+    def get_extension_model(self):
+        return ExtensionModel(
+            repository_url=self.repository_url,
+            core=string_to_boolean(self.core),
+            category=self.category
+        )
 
 
 class ExtensionModel:
+    """Model representing an extension.
+
+    Has cleaned values from both extension registry, and extension repository. Used for further work."""
 
     def __init__(self, repository_url, core, category):
         self.repository_url = repository_url
@@ -9,10 +53,6 @@ class ExtensionModel:
         self.extension_data = None
         self.git_tags = []
         self.extension_for_standard_versions = {}
-
-    def validate_extension_registry_data_only(self):
-        if self.repository_url[:19] != 'https://github.com/':
-            raise Exception("Repository must be on GitHub")
 
     def get_git_clone_url(self):
         if self.repository_url[-1:] == '/':
