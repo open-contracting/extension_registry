@@ -1,10 +1,6 @@
 import csv
 
 
-def string_to_boolean(in_string):
-    return in_string.strip().lower() == 'true'
-
-
 def load_categories_from_csv(registry_categories_csv_filename):
     categories = []
     with open(registry_categories_csv_filename, 'r') as csvfile:

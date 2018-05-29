@@ -17,7 +17,7 @@
     },
     "core": {
       "type": "string",
-      "enum": ["true", "false", "True", "False"]
+      "enum": ["True", "False"]
     }
   },
   "required": ["id", "repository_url", "category", "core"]

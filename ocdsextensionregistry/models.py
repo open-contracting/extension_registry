@@ -2,7 +2,6 @@ from jsonschema import FormatChecker
 from jsonschema.validators import Draft4Validator as validator
 import os
 import json
-from .util import string_to_boolean
 
 
 class ExtensionCSVModel:
@@ -35,7 +34,7 @@ class ExtensionCSVModel:
     def get_extension_model(self):
         return ExtensionModel(
             repository_url=self.repository_url,
-            core=string_to_boolean(self.core),
+            core=self.core.strip().lower() == 'true',
             category=self.category
         )
 

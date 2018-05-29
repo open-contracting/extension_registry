@@ -64,13 +64,22 @@ def test_no_core():
     assert '\'\' is not one of' in str(excinfo.value)
 
 
-def test_bad_core():
-    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_bad_core.csv'
+def test_bad_core1():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_bad_core1.csv'
     ocdsextensionregistry.validate.registry_categories_csv_filename = \
         os.path.dirname(__file__) + '/standard_categories.csv'
     with pytest.raises(Exception) as excinfo:
         ocdsextensionregistry.validate.validate_registry_csv()
     assert '\'cats\' is not one of ' in str(excinfo.value)
+
+
+def test_bad_core2():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_bad_core2.csv'
+    ocdsextensionregistry.validate.registry_categories_csv_filename = \
+        os.path.dirname(__file__) + '/standard_categories.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert '\'true\' is not one of ' in str(excinfo.value)
 
 
 def test_bad_id_space():
