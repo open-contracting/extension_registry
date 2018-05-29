@@ -1,8 +1,5 @@
 language: python
-cache:
-  directories:
-#    - extensions_repositories
-    - $HOME/.cache/pip
+cache: pip
 python:
   - "3.6"
 env:
