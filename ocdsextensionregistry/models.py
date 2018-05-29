@@ -32,9 +32,6 @@ class ExtensionCSVModel:
         for error in validator(schema, format_checker=FormatChecker()).iter_errors(data):
             raise Exception(self.extension_id + ": " + error.message)
 
-        if self.repository_url[:19] != 'https://github.com/':
-            raise Exception(self.extension_id + ": Repository must be on GitHub")
-
     def get_extension_model(self):
         return ExtensionModel(
             repository_url=self.repository_url,

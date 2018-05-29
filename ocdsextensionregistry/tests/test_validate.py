@@ -16,7 +16,16 @@ def test_only_github():
         os.path.dirname(__file__) + '/standard_categories.csv'
     with pytest.raises(Exception) as excinfo:
         ocdsextensionregistry.validate.validate_registry_csv()
-    assert 'Repository must be on GitHub' in str(excinfo.value)
+    assert 'signatories: \'https://gitlab.com/open-contracting/ocds_contract_signatories_extension\' does not match' in str(excinfo.value)
+
+
+def test_only_github_repository():
+    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_only_github_repository.csv'
+    ocdsextensionregistry.validate.registry_categories_csv_filename = \
+        os.path.dirname(__file__) + '/standard_categories.csv'
+    with pytest.raises(Exception) as excinfo:
+        ocdsextensionregistry.validate.validate_registry_csv()
+    assert 'signatories: \'https://github.com/open-contracting/extension_registry/blob/master/README.md\' does not match ' in str(excinfo.value)  # noqa
 
 
 def test_dupe_id():
