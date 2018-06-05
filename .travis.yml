@@ -2,9 +2,18 @@ language: python
 cache: pip
 python:
   - "3.6"
+env:
+  - BASEDIR="https://raw.githubusercontent.com/open-contracting/standard-maintenance-scripts/master"
 install:
   - pip install -r requirements.txt
   - pip install pytest
+  - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
 script:
   - PYTHONPATH=$PYTHONPATH:.  pytest --pyargs ocdsextensionregistry.tests
   - python validate.py
+  - curl -s -S --retry 3 $BASEDIR/tests/script.sh | bash -
+#  - python compile.py
+
+# For previous way of doing the extension registry, we used Travis to deploy the built files.
+# See https://github.com/open-contracting/extension_registry/blob/055c7e61f64689ab82205c0bb6f1e10d56181171/.travis.yml
+# The python compile.py and cache directory above have been tested and are ready for when we want to do this again.
