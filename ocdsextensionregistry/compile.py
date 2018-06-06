@@ -116,7 +116,7 @@ def _make_output_full_csv():
                 'yes' if _extensions[extension_id].core else 'no',
             ]
             for ver in standard_versions:
-                line.append('yes' if _extensions[extension_id].extension_for_standard_versions[ver].available else 'no')
+                line.append('yes' if _extensions[extension_id].extension_for_standard_versions[ver].available else 'no')  # noqa
                 line.append(_extensions[extension_id].extension_for_standard_versions[ver].git_reference)
             writer.writerow(line)
 
@@ -148,13 +148,13 @@ def _make_output_version_csv():
                         extension.category,
                         'yes' if _extensions[extension_id].core else 'no',
                         _extensions[extension_id].extension_for_standard_versions[ver].git_reference,
-                        _extensions[extension_id].extension_for_standard_versions[ver].get_url_to_use_in_standard_extensions_list()
+                        _extensions[extension_id].extension_for_standard_versions[ver].get_url_to_use_in_standard_extensions_list()  # noqa
                     ]
                     writer.writerow(line)
 
 
 def _make_output_full_json():
-    data = {'extensions':{}}
+    data = {'extensions': {}}
     for extension_id, extension in _extensions.items():
         data['extensions'][extension_id] = {
             'repository_url': extension.repository_url,
@@ -176,7 +176,7 @@ def _make_output_full_json():
                 data['extensions'][extension_id]['standard_versions'][ver] = {
                     'available': True,
                     'git_reference': extension.extension_for_standard_versions[ver].git_reference,
-                    'extension_json_url': extension.extension_for_standard_versions[ver].get_url_to_use_in_standard_extensions_list()
+                    'extension_json_url': extension.extension_for_standard_versions[ver].get_url_to_use_in_standard_extensions_list()  # noqa
                 }
             else:
                 data['extensions'][extension_id]['standard_versions'][ver] = {
