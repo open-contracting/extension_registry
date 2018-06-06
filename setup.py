@@ -1,11 +1,20 @@
-#!/usr/bin/env python
+from setuptools import setup, find_packages
 
-from distutils.core import setup
-
-setup(name='ocdsextensionregistry',
-      version='0.0',
-      description='Process data in OCDS extension repository',
-      author='Open Contracting',
-      url='',
-      packages=['ocdsextensionregistry']
-      )
+setup(
+    name='ocdsextensionregistry',
+    version='0.0.0',
+    packages=find_packages(),
+    install_requires=[
+        'jsonschema',
+        'requests',
+        'rfc3987',
+        'strict-rfc3339',
+    ],
+    extras_require={
+        'test': [
+            'coveralls',
+            'pytest',
+            'pytest-cov',
+        ],
+    },
+)
