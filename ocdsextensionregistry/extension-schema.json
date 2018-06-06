@@ -13,7 +13,18 @@
     },
     "category": {
       "type": "string",
-      "enum": []
+      "enum": [
+          "contract",
+          "ppp",
+          "bids",
+          "tender",
+          "implementation",
+          "parties",
+          "release",
+          "item",
+          "partyDetail",
+          "milestones"
+      ]
     },
     "core": {
       "type": "string",

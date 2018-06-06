@@ -1,13 +1,11 @@
 import csv
+
 from .models import ExtensionCSVModel
-from .util import load_categories_from_csv
 
 registry_csv_filename = None
-registry_categories_csv_filename = None
 
 
 def validate_registry_csv():
-    categories = load_categories_from_csv(registry_categories_csv_filename)
     extensions = {}
     with open(registry_csv_filename, 'r') as csvfile:
         reader = csv.reader(csvfile)
@@ -25,5 +23,5 @@ def validate_registry_csv():
                         category=row[2],
                         core=row[3]
                     )
-                    extension_csv_model.validate(categories=categories)
+                    extension_csv_model.validate()
                     extensions[extension_id] = extension_csv_model

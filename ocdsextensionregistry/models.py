@@ -15,7 +15,7 @@ class ExtensionCSVModel:
         self.core = core
         self.category = category
 
-    def validate(self, categories):
+    def validate(self):
         data = {
             "id": self.extension_id,
             "repository_url": self.repository_url,
@@ -25,8 +25,6 @@ class ExtensionCSVModel:
 
         with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), "extension-schema.json"), "r") as fp:
             schema = json.load(fp)
-
-        schema['properties']['category']['enum'] = categories
 
         for error in validator(schema, format_checker=FormatChecker()).iter_errors(data):
             raise Exception(self.extension_id + ": " + error.message)
