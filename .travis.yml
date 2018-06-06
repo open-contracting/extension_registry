@@ -1,19 +1,30 @@
+# We used Travis to deploy the built files. To resume deployment, uncomment and test the YAML below.
+# See this file from before the re-structuring: https://github.com/open-contracting/extension_registry/blob/055c7e61f64689ab82205c0bb6f1e10d56181171/.travis.yml
+
 language: python
 cache: pip
 python:
   - "3.6"
+addons:
+  apt:
+    packages:
+    - lftp
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script: curl -Ss https://raw.githubusercontent.com/OpenDataServices/opendataservices-deploy/master/open-contracting-extension_registry-deploy.sh | bash -
+#   on:
+#     all_branches: true
+#     condition: $TRAVIS_PULL_REQUEST = false
 env:
   - BASEDIR="https://raw.githubusercontent.com/open-contracting/standard-maintenance-scripts/master"
 install:
-  - pip install -r requirements.txt
-  - pip install pytest
   - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
+  - pip install .[test]
 script:
-  - PYTHONPATH=$PYTHONPATH:.  pytest --pyargs ocdsextensionregistry.tests
-  - python validate.py
   - curl -s -S --retry 3 $BASEDIR/tests/script.sh | bash -
-#  - python compile.py
-
-# For previous way of doing the extension registry, we used Travis to deploy the built files.
-# See https://github.com/open-contracting/extension_registry/blob/055c7e61f64689ab82205c0bb6f1e10d56181171/.travis.yml
-# The python compile.py and cache directory above have been tested and are ready for when we want to do this again.
+  - pytest --cov ocdsextensionregistry
+  - python validate.py
+  - python compile.py
+after_success:
+  coveralls
