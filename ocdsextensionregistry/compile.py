@@ -1,18 +1,20 @@
 import csv
-from .models import ExtensionModel
-from .util import string_to_boolean
+from .models import ExtensionCSVModel
 import os
 import subprocess
 import datetime
 import json
+from .util import load_categories_from_csv
 
 registry_csv_filename = None
+registry_categories_csv_filename = None
 extensions_repositories_folder = None
 standard_versions = ['1.0.3', '1.1.1', '1.1.3']
 output_folder = None
 legacy_output_folder = None
 
 _extensions = {}
+_categories = None
 
 
 def compile_registry():
@@ -33,6 +35,8 @@ def compile_registry():
 
 
 def _load_data():
+    global _categories
+    _categories = load_categories_from_csv(registry_categories_csv_filename)
     with open(registry_csv_filename, 'r') as csvfile:
         reader = csv.reader(csvfile)
         reader.__next__()  # Throw away the heading line
@@ -44,12 +48,14 @@ def _load_data():
                     if extension_id in _extensions.keys():
                         raise Exception("Extension %s is already registered! (Duplicate is on line %d)" % (
                             extension_id, reader.line_num))
-                    extension_model = ExtensionModel(
+                    extension_csv_model = ExtensionCSVModel(
+                        extension_id=row[0],
                         repository_url=row[1],
                         category=row[2],
-                        core=string_to_boolean(row[3])
+                        core=row[3]
                     )
-                    _extensions[extension_id] = extension_model
+                    extension_csv_model.validate(categories=_categories)
+                    _extensions[extension_id] = extension_csv_model.get_extension_model()
 
 
 def _fetch_extensions():

@@ -17,4 +17,8 @@ setup(
             'pytest-cov',
         ],
     },
+    package_data={'ocdsextensionregistry': [
+        'extension-schema.json',
+    ]},
+    include_package_data=True,
 )
