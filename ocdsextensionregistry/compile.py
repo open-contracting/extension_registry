@@ -5,7 +5,6 @@ import subprocess
 import datetime
 import json
 
-registry_csv_filename = None
 extensions_repositories_folder = None
 standard_versions = ['1.0.3', '1.1.1', '1.1.3']
 legacy_output_folder = None
@@ -13,12 +12,12 @@ legacy_output_folder = None
 _extensions = {}
 
 
-def compile_registry():
+def compile_registry(registry_csv_filename):
     if registry_csv_filename is None:
         raise Exception("Please set registry_csv_filename")
     if extensions_repositories_folder is None:
         raise Exception("Please set extensions_repositories_folder")
-    _load_data()
+    _load_data(registry_csv_filename)
     _fetch_extensions()
     _load_extension_data()
     _process_data()
@@ -26,7 +25,7 @@ def compile_registry():
         _make_legacy_output()
 
 
-def _load_data():
+def _load_data(registry_csv_filename):
     with open(registry_csv_filename, 'r') as csvfile:
         reader = csv.reader(csvfile)
         reader.__next__()  # Throw away the heading line

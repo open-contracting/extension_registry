@@ -5,10 +5,8 @@ import os
 from jsonschema import FormatChecker
 from jsonschema.validators import Draft4Validator as validator
 
-registry_csv_filename = None
 
-
-def validate_registry_csv():
+def validate_registry_csv(registry_csv_filename):
     ids = set()
 
     with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'extension-schema.json')) as f:
