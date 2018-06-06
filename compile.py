@@ -14,11 +14,6 @@ if __name__ == "__main__":
     if not os.path.isdir(ocdsextensionregistry.compile.extensions_repositories_folder):
         os.makedirs(ocdsextensionregistry.compile.extensions_repositories_folder)
 
-    ocdsextensionregistry.compile.output_folder = \
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
-    if not os.path.isdir(ocdsextensionregistry.compile.output_folder):
-        os.makedirs(ocdsextensionregistry.compile.output_folder)
-
     ocdsextensionregistry.compile.legacy_output_folder = \
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "legacy_output")
     if not os.path.isdir(ocdsextensionregistry.compile.legacy_output_folder):
