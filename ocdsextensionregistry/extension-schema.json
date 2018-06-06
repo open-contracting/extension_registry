@@ -15,22 +15,30 @@
     "category": {
       "type": "string",
       "enum": [
-          "contract",
-          "ppp",
-          "bids",
-          "tender",
-          "implementation",
-          "parties",
-          "release",
-          "item",
-          "partyDetail",
-          "milestones"
+        "contract",
+        "ppp",
+        "bids",
+        "tender",
+        "implementation",
+        "parties",
+        "release",
+        "item",
+        "partyDetail",
+        "milestones"
       ]
     },
     "core": {
       "type": "string",
-      "enum": ["True", "False"]
+      "enum": [
+        "True",
+        "False"
+      ]
     }
   },
-  "required": ["id", "repository_url", "category", "core"]
+  "required": [
+    "id",
+    "repository_url",
+    "category",
+    "core"
+  ]
 }
