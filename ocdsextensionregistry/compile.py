@@ -1,5 +1,5 @@
 import csv
-from .models import ExtensionCSVModel
+from .models import ExtensionModel
 import os
 import subprocess
 import datetime
@@ -29,12 +29,11 @@ def _load_data(registry_csv_filename):
     with open(registry_csv_filename) as f:
         reader = csv.DictReader(f)
         for row in reader:
-            extensions[row['Id']] = ExtensionCSVModel(
-                extension_id=row['Id'],
+            extensions[row['Id']] = ExtensionModel(
                 repository_url=row['RepositoryURL'],
                 category=row['Category'],
-                core=row['Core'],
-            ).get_extension_model()
+                core=row['Core'] == 'True',
+            )
 
     return extensions
 

@@ -1,22 +1,3 @@
-class ExtensionCSVModel:
-    """Model representing details of the extension as raw values as they are presented in the CSV.
-
-    This lets us do more validation."""
-
-    def __init__(self, extension_id, repository_url, core, category):
-        self.extension_id = extension_id
-        self.repository_url = repository_url
-        self.core = core
-        self.category = category
-
-    def get_extension_model(self):
-        return ExtensionModel(
-            repository_url=self.repository_url,
-            core=self.core.strip().lower() == 'true',
-            category=self.category
-        )
-
-
 class ExtensionModel:
     """Model representing an extension.
 
