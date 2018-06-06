@@ -44,7 +44,6 @@ def _load_data():
                         category=row[2],
                         core=row[3]
                     )
-                    extension_csv_model.validate()
                     _extensions[extension_id] = extension_csv_model.get_extension_model()
 
 

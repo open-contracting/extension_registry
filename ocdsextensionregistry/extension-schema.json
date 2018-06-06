@@ -4,15 +4,15 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "id": {
+    "Id": {
       "type": "string",
       "pattern": "^[a-zA-Z_]+$"
     },
-    "repository_url": {
+    "RepositoryURL": {
       "type": "string",
       "format": "uri"
     },
-    "category": {
+    "Category": {
       "type": "string",
       "enum": [
         "contract",
@@ -27,7 +27,7 @@
         "milestones"
       ]
     },
-    "core": {
+    "Core": {
       "type": "string",
       "enum": [
         "True",
@@ -36,9 +36,9 @@
     }
   },
   "required": [
-    "id",
-    "repository_url",
-    "category",
-    "core"
+    "Id",
+    "RepositoryURL",
+    "Category",
+    "Core"
   ]
 }

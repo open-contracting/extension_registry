@@ -1,9 +1,3 @@
-from jsonschema import FormatChecker
-from jsonschema.validators import Draft4Validator as validator
-import os
-import json
-
-
 class ExtensionCSVModel:
     """Model representing details of the extension as raw values as they are presented in the CSV.
 
@@ -14,20 +8,6 @@ class ExtensionCSVModel:
         self.repository_url = repository_url
         self.core = core
         self.category = category
-
-    def validate(self):
-        data = {
-            "id": self.extension_id,
-            "repository_url": self.repository_url,
-            "category": self.category,
-            "core": self.core,
-        }
-
-        with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), "extension-schema.json"), "r") as fp:
-            schema = json.load(fp)
-
-        for error in validator(schema, format_checker=FormatChecker()).iter_errors(data):
-            raise Exception(self.extension_id + ": " + error.message)
 
     def get_extension_model(self):
         return ExtensionModel(

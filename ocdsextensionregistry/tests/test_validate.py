@@ -8,25 +8,11 @@ def test_ok():
     ocdsextensionregistry.validate.validate_registry_csv()
 
 
-def test_only_github():
-    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_only_github.csv'
-    with pytest.raises(Exception) as excinfo:
-        ocdsextensionregistry.validate.validate_registry_csv()
-    assert 'signatories: \'https://gitlab.com/open-contracting/ocds_contract_signatories_extension\' does not match' in str(excinfo.value)  # noqa
-
-
-def test_only_github_repository():
-    ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_only_github_repository.csv'  # noqa
-    with pytest.raises(Exception) as excinfo:
-        ocdsextensionregistry.validate.validate_registry_csv()
-    assert 'signatories: \'https://github.com/open-contracting/extension_registry/blob/master/README.md\' does not match ' in str(excinfo.value)  # noqa
-
-
 def test_dupe_id():
     ocdsextensionregistry.validate.registry_csv_filename = os.path.dirname(__file__) + '/validate_dupe_id.csv'
     with pytest.raises(Exception) as excinfo:
         ocdsextensionregistry.validate.validate_registry_csv()
-    assert 'Extension signatories is already registered! (Duplicate is on line 3)' in str(excinfo.value)
+    assert 'Duplicate id "signatories" on line 3' in str(excinfo.value)
 
 
 def test_no_category():

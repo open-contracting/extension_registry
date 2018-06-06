@@ -1,27 +1,26 @@
 import csv
+import json
+import os
 
-from .models import ExtensionCSVModel
+from jsonschema import FormatChecker
+from jsonschema.validators import Draft4Validator as validator
 
 registry_csv_filename = None
 
 
 def validate_registry_csv():
-    extensions = {}
-    with open(registry_csv_filename, 'r') as csvfile:
-        reader = csv.reader(csvfile)
-        reader.__next__()  # Throw away the heading line
+    ids = set()
+
+    with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'extension-schema.json')) as f:
+        schema = json.load(f)
+
+    with open(registry_csv_filename) as f:
+        reader = csv.DictReader(f)
         for row in reader:
-            # To decide if row has any data in, check it has values and it has an id.
-            if len(row) > 0:
-                extension_id = row[0].lower().strip()
-                if extension_id:
-                    if extension_id in extensions.keys():
-                        raise Exception("Extension %s is already registered! (Duplicate is on line %d)" % (extension_id, reader.line_num))  # noqa
-                    extension_csv_model = ExtensionCSVModel(
-                        extension_id=row[0],
-                        repository_url=row[1],
-                        category=row[2],
-                        core=row[3]
-                    )
-                    extension_csv_model.validate()
-                    extensions[extension_id] = extension_csv_model
+            for error in validator(schema, format_checker=FormatChecker()).iter_errors(row):
+                raise Exception('{}: {} ({})\n'.format(row['Id'], error.message, '/'.join(error.absolute_schema_path)))
+
+            if row['Id'] in ids:
+                raise Exception('Duplicate id "{}" on line {}'.format(row['Id'], reader.line_num))
+
+            ids.add(row['Id'])
