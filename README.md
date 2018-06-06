@@ -12,11 +12,6 @@ Edit the extensions.csv file to add an extension. One row per extension. The ord
   *  Category - one value, a string.
   *  Core - a boolean value, "true" or "false".
 
-
-(Currently RepositoryURL only supports GitHub. If you want to use GitLab, Bitbucket or another alternative that should
-be fine but you need to open an issue first as some minor work to support that will be needed.)
-
-
 ## Maintenance
 
 Install dependencies:
@@ -31,9 +26,6 @@ Compile entries:
 
     python compile.py
 
-The _compile.py_ script will generate non-version-controlled files in the folders "output" and "legacy_output".
+The _compile.py_ script will generate non-version-controlled files in the folders "legacy_output".
 
 To do this, it will need to check out each extension repository. (The "git" command should be available). It will do this in the "extensions_repositories" folder.
-
-pytest tests are available in ocdsextensionregistry/tests.
-

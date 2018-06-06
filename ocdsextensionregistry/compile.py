@@ -5,24 +5,24 @@ import subprocess
 import datetime
 import json
 
-extensions_repositories_folder = None
 standard_versions = ['1.0.3', '1.1.1', '1.1.3']
-legacy_output_folder = None
 
 _extensions = {}
 
 
-def compile_registry(registry_csv_filename):
+def compile_registry(registry_csv_filename, extensions_repositories_folder, legacy_output_folder):
     if registry_csv_filename is None:
         raise Exception("Please set registry_csv_filename")
     if extensions_repositories_folder is None:
         raise Exception("Please set extensions_repositories_folder")
+    os.makedirs(extensions_repositories_folder, exist_ok=True)
     _load_data(registry_csv_filename)
-    _fetch_extensions()
-    _load_extension_data()
+    _fetch_extensions(extensions_repositories_folder)
+    _load_extension_data(extensions_repositories_folder)
     _process_data()
     if legacy_output_folder is not None:
-        _make_legacy_output()
+        os.makedirs(legacy_output_folder, exist_ok=True)
+        _make_legacy_output(legacy_output_folder)
 
 
 def _load_data(registry_csv_filename):
@@ -46,7 +46,7 @@ def _load_data(registry_csv_filename):
                     _extensions[extension_id] = extension_csv_model.get_extension_model()
 
 
-def _fetch_extensions():
+def _fetch_extensions(extensions_repositories_folder):
     for extension_id, data in _extensions.items():
         folder = os.path.join(extensions_repositories_folder,  extension_id)
         if os.path.isdir(folder):
@@ -58,7 +58,7 @@ def _fetch_extensions():
             subprocess.check_call(command, shell=True)
 
 
-def _load_extension_data():
+def _load_extension_data(extensions_repositories_folder):
     for extension_id in _extensions.keys():
         # Load the master json
         with open(os.path.join(extensions_repositories_folder,  extension_id, 'extension.json')) as fp:
@@ -77,7 +77,7 @@ def _process_data():
         _extensions[extension_id].process(standard_versions=standard_versions)
 
 
-def _make_legacy_output():
+def _make_legacy_output(legacy_output_folder):
     for ver in standard_versions:
         out = {
             "last_updated": str(datetime.datetime.utcnow()),
