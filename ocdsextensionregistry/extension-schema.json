@@ -2,14 +2,15 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "extension",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^[a-zA-Z0-9_]*$"
+      "pattern": "^[a-zA-Z_]+$"
     },
     "repository_url": {
       "type": "string",
-      "pattern": "^https:\/\/github.com\/[^\/]*\/[^\/]*[\/]?$"
+      "format": "uri"
     },
     "category": {
       "type": "string",
