@@ -7,8 +7,6 @@ import json
 
 standard_versions = ['1.0.3', '1.1.1', '1.1.3']
 
-_extensions = {}
-
 
 def compile_registry(registry_csv_filename, extensions_repositories_folder, legacy_output_folder):
     if registry_csv_filename is None:
@@ -16,38 +14,33 @@ def compile_registry(registry_csv_filename, extensions_repositories_folder, lega
     if extensions_repositories_folder is None:
         raise Exception("Please set extensions_repositories_folder")
     os.makedirs(extensions_repositories_folder, exist_ok=True)
-    _load_data(registry_csv_filename)
-    _fetch_extensions(extensions_repositories_folder)
-    _load_extension_data(extensions_repositories_folder)
-    _process_data()
+    extensions = _load_data(registry_csv_filename)
+    _fetch_extensions(extensions, extensions_repositories_folder)
+    _load_extension_data(extensions, extensions_repositories_folder)
+    _process_data(extensions)
     if legacy_output_folder is not None:
         os.makedirs(legacy_output_folder, exist_ok=True)
-        _make_legacy_output(legacy_output_folder)
+        _make_legacy_output(extensions, legacy_output_folder)
 
 
 def _load_data(registry_csv_filename):
-    with open(registry_csv_filename, 'r') as csvfile:
-        reader = csv.reader(csvfile)
-        reader.__next__()  # Throw away the heading line
+    extensions = {}
+
+    with open(registry_csv_filename) as f:
+        reader = csv.DictReader(f)
         for row in reader:
-            # To decide if row has any data in, check it has values and it has an id.
-            if len(row) > 0:
-                extension_id = row[0].lower().strip()
-                if extension_id:
-                    if extension_id in _extensions.keys():
-                        raise Exception("Extension %s is already registered! (Duplicate is on line %d)" % (
-                            extension_id, reader.line_num))
-                    extension_csv_model = ExtensionCSVModel(
-                        extension_id=row[0],
-                        repository_url=row[1],
-                        category=row[2],
-                        core=row[3]
-                    )
-                    _extensions[extension_id] = extension_csv_model.get_extension_model()
+            extensions[row['Id']] = ExtensionCSVModel(
+                extension_id=row['Id'],
+                repository_url=row['RepositoryURL'],
+                category=row['Category'],
+                core=row['Core'],
+            ).get_extension_model()
+
+    return extensions
 
 
-def _fetch_extensions(extensions_repositories_folder):
-    for extension_id, data in _extensions.items():
+def _fetch_extensions(extensions, extensions_repositories_folder):
+    for extension_id, data in extensions.items():
         folder = os.path.join(extensions_repositories_folder,  extension_id)
         if os.path.isdir(folder):
             command = "git pull origin master"
@@ -58,33 +51,33 @@ def _fetch_extensions(extensions_repositories_folder):
             subprocess.check_call(command, shell=True)
 
 
-def _load_extension_data(extensions_repositories_folder):
-    for extension_id in _extensions.keys():
+def _load_extension_data(extensions, extensions_repositories_folder):
+    for extension_id in extensions.keys():
         # Load the master json
         with open(os.path.join(extensions_repositories_folder,  extension_id, 'extension.json')) as fp:
-            _extensions[extension_id].extension_data = json.load(fp)
+            extensions[extension_id].extension_data = json.load(fp)
         # Load list of tags
         results = subprocess.check_output(
             "git tag",
             cwd=os.path.join(extensions_repositories_folder, extension_id),
             shell=True
         )
-        _extensions[extension_id].git_tags = results.decode("utf-8") .split('\n')
+        extensions[extension_id].git_tags = results.decode("utf-8") .split('\n')
 
 
-def _process_data():
-    for extension_id in _extensions.keys():
-        _extensions[extension_id].process(standard_versions=standard_versions)
+def _process_data(extensions):
+    for extension_id in extensions.keys():
+        extensions[extension_id].process(standard_versions=standard_versions)
 
 
-def _make_legacy_output(legacy_output_folder):
+def _make_legacy_output(extensions, legacy_output_folder):
     for ver in standard_versions:
         out = {
             "last_updated": str(datetime.datetime.utcnow()),
             "extensions": []
         }
 
-        for extension_id, extension in _extensions.items():
+        for extension_id, extension in extensions.items():
             if extension.extension_for_standard_versions[ver].available:
                 out_extension = {
                     'slug': extension_id,
