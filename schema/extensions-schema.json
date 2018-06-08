@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "extension",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z_]+$"
+    },
+    "Category": {
+      "type": "string",
+      "enum": [
+        "contract",
+        "ppp",
+        "bids",
+        "tender",
+        "implementation",
+        "parties",
+        "release",
+        "item",
+        "partyDetail",
+        "milestones"
+      ]
+    },
+    "Core": {
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ]
+    }
+  },
+  "required": [
+    "Id",
+    "Category",
+    "Core"
+  ]
+}
