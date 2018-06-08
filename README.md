@@ -12,7 +12,7 @@ This repository contains the two authoritative tables (CSV files) that list the 
 
 Create an issue, or a pull request if able, about inserting a row in `extension_versions.csv`. See the documentation below regarding the usage of each column of `extension_versions.csv`.
 
-## Table schema
+## CSV schema
 
 ### `extensions.csv`
 
@@ -41,3 +41,12 @@ The CSV columns are:
   * If the extension is *live*, set this to the branch name at which the version is continuously updated, or to a version name chosen by the extension's author.
 * `Base URL` (required): The URL to which `extension.json` can be appended to retrieve the metadata for this version of the extension.
 * `Download URL`: The URL to retrieve a ZIP archive of this version of the extension.
+
+## Maintenance
+
+Presently, the standard documentation renders lists of community extensions using a `extensions.js` file, that aggregates information from the registry and each extension. This file is now published on GitHub at [build/extensions.js](/build/extensions.js). To regenerate the file:
+
+    pip install -r requirements.txt
+    python scripts/compile.py
+
+This repository has tests to validate `extensions.csv` and `extension_versions.csv` and to check the integrity of `extensions.js`.
