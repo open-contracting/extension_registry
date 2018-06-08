@@ -16,13 +16,13 @@ metrics,ppp,
 milestone_documents,milestones,true
 participation_fee,tender,true
 partyScale,partyDetail,
-performance_failures,ppp,
+performance_failures,implementation,
 ppp,ppp,
 process_title,release,true
 qualification,ppp,
 requirements,tender,
 risk_allocation,ppp,
 shareholders,ppp,
-signatories,ppp,
+signatories,contract,
 tariffs,ppp,
 transaction_milestones,ppp,
