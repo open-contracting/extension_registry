@@ -4,7 +4,9 @@ This repository contains the two authoritative tables (CSV files) that list the 
 
 ## How to register an extension
 
-[Create an issue](https://github.com/open-contracting/extension_registry/issues/new) with a link to your extension. The registry's maintainers will evaluate the extension's quality and relevance and provide feedback in the issue or the extension's repository. If appropriate, the maintainers will insert a row, in alphabetical order, to `extensions.csv` and to `extension_versions.csv`.
+### Adding a new extension
+
+[Create an issue](https://github.com/open-contracting/extension_registry/issues/new) with a link to your extension. The registry's maintainers will evaluate the extension's quality and relevance and provide feedback in the issue or the extension's repository. If appropriate, the maintainers will insert a row, in alphabetical order, in each of `extensions.csv` and `extension_versions.csv`.
 
 ### Adding a new version of an extension
 
@@ -19,7 +21,7 @@ This file has one extension per row. The row order has no effect, but alphabetic
 The CSV columns are:
 
 * `Id` (required): A unique identifier for the extension, composed of underscores and lowercase and uppercase ASCII letters. If the extension follows the [extension naming guidance](https://github.com/open-contracting/standard_extension_template#naming-extension-repositories), this `Id` can be the extension repository's name, without the `ocds_` prefix and `_extension` suffix.
-*  `Category`: The [standard documentation](http://standard.open-contracting.org/) lists, in specific locations, core extensions that target a specific part of the schema. Core extensions may set a [category](/schema/extensions-schema.json) to appear in one of these lists.
+*  `Category`: The [standard documentation](http://standard.open-contracting.org/) lists, in specific locations, extensions that target a specific part of the schema. Extensions may set a [category](/schema/extensions-schema.json) to appear in one of these lists.
 *  `Core`: The standard documentation defines [core extensions](http://standard.open-contracting.org/latest/en/extensions/), and the standard's [governance process](http://standard.open-contracting.org/latest/en/support/governance/) determines whether an extension is core.
 
 ### `extension_versions.csv`
