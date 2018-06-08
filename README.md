@@ -12,7 +12,7 @@ This repository contains the two authoritative tables (CSV files) that list the 
 
 Create an issue, or a pull request if able, about inserting a row in `extension_versions.csv`. See the documentation below regarding the usage of each column of `extension_versions.csv`.
 
-## Table schema
+## CSV schema
 
 ### `extensions.csv`
 
@@ -28,7 +28,7 @@ The CSV columns are:
 
 This file has one version (or release) of an extension per row. The row order has no effect, but alphabetical order is maintained for easier scanning and change tracking.
 
-A version of an extension can be either 'live' or 'frozen'. A live version is continously updated at the same URL; for example, an author publishes an extension on GitHub, and continously updates the default branch. A frozen version is published once at a given URL and never updated; for example, an author tags a commit and releases that version of the extension. An extension can have both live and frozen versions.
+A version of an extension can be either 'live' or 'frozen'. A live version is continously updated at the same URL; for example, an author publishes an extension on GitHub, and continously updates the default branch. A frozen version is published once at a given URL and never updated; for example, an author tags a commit and releases that version of the extension. An extension can have both live and frozen versions. An extension ought to have only one live version.
 
 The CSV columns are:
 
@@ -41,3 +41,12 @@ The CSV columns are:
   * If the extension is *live*, set this to the branch name at which the version is continuously updated, or to a version name chosen by the extension's author.
 * `Base URL` (required): The URL to which `extension.json` can be appended to retrieve the metadata for this version of the extension.
 * `Download URL`: The URL to retrieve a ZIP archive of this version of the extension.
+
+## Maintenance
+
+Presently, the standard documentation renders lists of community extensions using a `extensions.js` file, that aggregates information from the registry and each extension. This file is now published on GitHub at [build/extensions.js](/build/extensions.js). To regenerate the file:
+
+    pip install -r requirements.txt
+    python scripts/compile.py
+
+This repository has tests to validate `extensions.csv` and `extension_versions.csv` and to check the integrity of `extensions.js`.
