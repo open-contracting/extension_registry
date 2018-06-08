@@ -65,11 +65,9 @@ def test_registry():
                     if id in identifiers:
                         identifiers[id] += 1
                     else:
-                        raise Exception('{}: Id "{}" not in {}'.format(
-                            os.path.basename(extension_versions_path), id, os.path.basename(extensions_path)))
+                        raise Exception('extension_versions.csv: Id "{}" not in extensions.csv'.format(id))
 
     # Ensure every extension has at least one version.
     for id, count in identifiers.items():
         if not count:
-            raise Exception('{}: Id "{}" not in {}'.format(
-                os.path.basename(extensions_path), id, os.path.basename(extension_versions_path)))
+            raise Exception('extensions.csv: Id "{}" not in extension_versions.csv'.format(id))
