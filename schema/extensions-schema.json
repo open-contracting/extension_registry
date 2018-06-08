@@ -6,7 +6,7 @@
   "properties": {
     "Id": {
       "type": "string",
-      "pattern": "^[a-zA-Z_]+$"
+      "pattern": "^[A-Za-z_]+$"
     },
     "Category": {
       "type": "string",
