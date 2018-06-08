@@ -18,8 +18,8 @@ def test_registry():
     # Keep track of extension identifiers, to ensure consistency across files.
     identifiers = {}
 
-    for data_basename, uniqueness in configuration.items():
-        schema_basename = '{}-schema.json'.format(os.path.splitext(data_basename)[0])
+    for csv_basename, uniqueness in configuration.items():
+        schema_basename = '{}-schema.json'.format(os.path.splitext(csv_basename)[0])
 
         with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'schema', schema_basename)) as f:
             schema = json.load(f)
@@ -32,7 +32,7 @@ def test_registry():
             else:
                 seen[key] = set()
 
-        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', data_basename)) as f:
+        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', csv_basename)) as f:
             reader = csv.DictReader(f)
             for row in reader:
                 id = row['Id']
@@ -50,15 +50,15 @@ def test_registry():
                     if scope:
                         if value in seen[scope][row[scope]][key]:
                             raise Exception('{}: Duplicate {} "{}" in scope of {} "{}" on line {}'.format(
-                                data_basename, key, value, scope, row[scope], reader.line_num))
+                                csv_basename, key, value, scope, row[scope], reader.line_num))
                         seen[scope][row[scope]][key].add(value)
                     else:
                         if value in seen[key]:
                             raise Exception('{}: Duplicate {} "{}" on line {}'.format(
-                                data_basename, key, value, reader.line_num))
+                                csv_basename, key, value, reader.line_num))
                         seen[key].add(value)
 
-                if data_basename == 'extensions.csv':
+                if csv_basename == 'extensions.csv':
                     identifiers[id] = 0
                 else:
                     # Ensure every version belongs to a known extension.
