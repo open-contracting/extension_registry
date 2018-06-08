@@ -9,9 +9,9 @@ from jsonschema.validators import Draft4Validator as validator
 
 def test_registry():
     configuration = {
-        # Id must be unique in extensions file.
+        # Id must be unique in extensions.csv.
         'extensions.csv': {'Id': None},
-        # Version and Base URL must be unique, within the scope of a given Id, in extension versions file.
+        # Version and Base URL must be unique, within the scope of a given Id, in extension_versions.csv.
         'extension_versions.csv': {'Version': 'Id', 'Base URL': 'Id'},
     }
 
