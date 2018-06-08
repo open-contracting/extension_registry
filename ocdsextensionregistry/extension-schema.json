@@ -8,10 +8,6 @@
       "type": "string",
       "pattern": "^[a-zA-Z_]+$"
     },
-    "RepositoryURL": {
-      "type": "string",
-      "format": "uri"
-    },
     "Category": {
       "type": "string",
       "enum": [
@@ -30,14 +26,13 @@
     "Core": {
       "type": "string",
       "enum": [
-        "True",
-        "False"
+        "true",
+        "false"
       ]
     }
   },
   "required": [
     "Id",
-    "RepositoryURL",
     "Category",
     "Core"
   ]
