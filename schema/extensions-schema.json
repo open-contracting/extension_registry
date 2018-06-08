@@ -11,23 +11,29 @@
     "Category": {
       "type": "string",
       "enum": [
-        "contract",
-        "ppp",
+        "award",
         "bids",
-        "tender",
+        "budget",
+        "contract",
+        "document",
         "implementation",
-        "parties",
-        "release",
         "item",
+        "milestones",
+        "parties",
         "partyDetail",
-        "milestones"
+        "period",
+        "planning",
+        "ppp",
+        "release",
+        "tender",
+        "value"
       ]
     },
     "Core": {
       "type": "string",
       "enum": [
-        "true",
-        "false"
+        "false",
+        "true"
       ]
     }
   },
