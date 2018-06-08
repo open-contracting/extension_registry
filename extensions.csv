@@ -16,13 +16,13 @@ metrics,ppp,false
 milestone_documents,milestones,true
 participation_fee,tender,true
 partyScale,partyDetail,false
-performance_failures,implementation,false
+performance_failures,ppp,false
 ppp,ppp,false
 process_title,release,true
 qualification,ppp,false
 requirements,tender,false
 risk_allocation,ppp,false
 shareholders,ppp,false
-signatories,contract,false
+signatories,ppp,false
 tariffs,ppp,false
 transaction_milestones,ppp,false
