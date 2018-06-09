@@ -6,11 +6,11 @@ This repository contains the two authoritative tables (CSV files) that list the 
 
 ### Adding a new extension
 
-[Create an issue](https://github.com/open-contracting/extension_registry/issues/new) with a link to your extension. The registry's maintainers will evaluate the extension's quality and relevance and provide feedback in the issue or the extension's repository. If appropriate, the maintainers will insert a row, in alphabetical order, in each of `extensions.csv` and `extension_versions.csv`.
+[Create an issue](https://github.com/open-contracting/extension_registry/issues/new) with a link to your extension. The registry's maintainers will evaluate the extension's quality and relevance and provide feedback in the created issue or the extension's repository. When appropriate, the maintainers will update `extensions.csv` and `extension_versions.csv` and close the issue.
 
 ### Adding a new version of an extension
 
-Create an issue, or a pull request if able, about inserting a row in `extension_versions.csv`. See the documentation below regarding the usage of each column of `extension_versions.csv`.
+Create an issue or pull request about updating `extension_versions.csv`. See below for more about this file.
 
 ## CSV schema
 
@@ -44,7 +44,7 @@ The CSV columns are:
 
 ## Maintenance
 
-Presently, the standard documentation renders lists of community extensions using an `extensions.js` file, that aggregates information from the registry and each extension. This file is published at [build/extensions.js](/build/extensions.js). To regenerate the file:
+The standard documentation renders lists of community extensions using an `extensions.js` file, that aggregates information from the registry and each extension. This file is published at [build/extensions.js](/build/extensions.js). To regenerate the file:
 
     pip install -r requirements.txt
     python scripts/compile.py
