@@ -18,6 +18,7 @@ def compare(caplog, basename, expected):
 
     assert actual == expected
 
+
 def test_extensions_js_is_in_sync(caplog):
     compare(caplog, 'extensions.js', compile_extensions_js())
 
