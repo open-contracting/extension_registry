@@ -1,5 +1,6 @@
 jsonschema
 pytest
 requests
+requests-cache
 rfc3987
 strict-rfc3339
