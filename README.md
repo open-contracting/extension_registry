@@ -1,6 +1,9 @@
 # Extension Registry
 
-This repository contains the two authoritative tables (CSV files) that list the registered core and community [OCDS extensions](http://standard.open-contracting.org/latest/en/extensions/).
+This repository contains the two authoritative tables (CSV files) that list the registered core and community [OCDS extensions](http://standard.open-contracting.org/latest/en/extensions/):
+
+* [`extensions.csv`](/extensions.csv) lists the extensions in the registry
+* [`extension_versions.csv`](/extension_versions.csv) lists each version of each extension in the registry
 
 ## How to register an extension
 
@@ -12,9 +15,9 @@ This repository contains the two authoritative tables (CSV files) that list the 
 
 Create an issue or pull request about updating `extension_versions.csv`. See below for more about this file.
 
-## CSV schema
+## How to edit the CSV files
 
-### `extensions.csv`
+### [`extensions.csv`](/extensions.csv)
 
 This file has one extension per row. The row order has no effect, but alphabetical order is maintained for easier scanning and change tracking.
 
@@ -24,7 +27,7 @@ The CSV columns are:
 *  `Category`: The [standard documentation](http://standard.open-contracting.org/) lists, in specific locations, extensions that target a specific part of the schema. Extensions may set a [category](/schema/extensions-schema.json) to appear in one of these lists.
 *  `Core`: The standard documentation defines [core extensions](http://standard.open-contracting.org/latest/en/extensions/), and the standard's [governance process](http://standard.open-contracting.org/latest/en/support/governance/) determines whether an extension is core.
 
-### `extension_versions.csv`
+### [`extension_versions.csv`](/extension_versions.csv)
 
 This file has one version (or release) of an extension per row. The row order has no effect, but alphabetical order is maintained for easier scanning and change tracking.
 
@@ -34,11 +37,11 @@ The CSV columns are:
 
 * `Id` (required): An `Id` from `extensions.csv`.
 * `Date`:
-  * If the extension is *frozen*, set this to the date of the release (e.g. as shown on the extension's releases page on GitHub), or the date on which the row was inserted.
-  * If the extension is *live*, leave this blank.
+  * If the extension is *frozen*, this is the date of the release (e.g. as shown on the extension's releases page on GitHub), or the date on which the row was inserted.
+  * If the extension is *live*, this is blank.
 * `Version` (required):
-  * If the extension is *frozen*, set this to the tag of the release (e.g. as shown on the extension's releases page on GitHub), or a version number chosen by the extension's author.
-  * If the extension is *live*, set this to the branch name at which the version is continuously updated, or to a version name chosen by the extension's author.
+  * If the extension is *frozen*, this is the tag of the release (e.g. as shown on the extension's releases page on GitHub), or a version number chosen by the extension's author.
+  * If the extension is *live*, this is the branch name at which the version is continuously updated, or a version name chosen by the extension's author.
 * `Base URL` (required): The URL to which `extension.json` can be appended to retrieve the metadata for this version of the extension.
 * `Download URL`: The URL to retrieve a ZIP archive of this version of the extension.
 
