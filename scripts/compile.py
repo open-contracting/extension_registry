@@ -13,9 +13,9 @@ directory = os.path.dirname(os.path.realpath(__file__))
 requests_cache.install_cache(expire_after=timedelta(hours=1))
 
 
-def compile_extensions_js():
+def compile_extensions_json():
     """
-    Compiles build/extensions.js, which includes the most recent versions of extensions, and which the standard
+    Compiles build/extensions.json, which includes the most recent versions of extensions, and which the standard
     documentation reads in order to render lists of community extensions.
     """
 
@@ -58,4 +58,9 @@ def compile_extensions_js():
                 'documentation_url': data['documentationUrl']['en'],
             })
 
-    return 'extensions_callback({})'.format(json.dumps({'extensions': extensions}, sort_keys=True))
+    return json.dumps({'extensions': extensions}, indent=2, separators=(',', ': '), sort_keys=True) + '\n'
+
+
+if __name__ == '__main__':
+    with open(os.path.join(directory, '..', 'build', 'extensions.json'), 'w') as f:
+        f.write(compile_extensions_json())
