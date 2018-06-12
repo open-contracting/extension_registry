@@ -58,7 +58,7 @@ def compile_extensions_json():
                 'documentation_url': data['documentationUrl']['en'],
             })
 
-    return json.dumps({'extensions': extensions}, sort_keys=True)
+    return json.dumps({'extensions': extensions}, indent=2, separators=(',', ': '), sort_keys=True) + '\n'
 
 
 if __name__ == '__main__':
