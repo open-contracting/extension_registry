@@ -3,6 +3,7 @@ import json
 import os
 from collections import defaultdict
 
+import requests
 from jsonschema import FormatChecker
 from jsonschema.validators import Draft4Validator as validator
 
@@ -43,6 +44,14 @@ def test_registry():
 
                 for error in validator(schema, format_checker=FormatChecker()).iter_errors(row):
                     raise Exception('{}: {} ({})\n'.format(id, error.message, '/'.join(error.absolute_schema_path)))
+
+                # Validate that URLs resolve.
+                if row.get('Base URL'):
+                    response = requests.get(row['Base URL'] + 'extension.json')
+                    response.raise_for_status()
+                if row.get('Download URL'):
+                    response = requests.get(row['Download URL'])
+                    response.raise_for_status()
 
                 # Validate the uniqueness of a key-value pair, within a given scope.
                 for key, scope in uniqueness.items():
