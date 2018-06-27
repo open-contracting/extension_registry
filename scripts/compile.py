@@ -43,7 +43,9 @@ def compile_extensions_json():
             # Get the most recent frozen version. We presently have no strategy for choosing between live versions.
             version = max(versions, key=lambda version: version['Date'])
 
-            data = requests.get(version['Base URL'] + 'extension.json').json()
+            response = requests.get(version['Base URL'] + 'extension.json')
+            response.raise_for_status()
+            data = response.json()
 
             extensions.append({
                 'category': row['Category'],
