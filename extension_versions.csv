@@ -10,7 +10,7 @@ charges,,master,https://raw.githubusercontent.com/open-contracting/ocds_charges_
 charges,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting/ocds_charges_extension/v1.1/,https://api.github.com/repos/open-contracting/ocds_charges_extension/zipball/v1.1
 contract,,master,https://raw.githubusercontent.com/open-contracting/ocds_multiple_buyers_extension/master/,https://github.com/open-contracting/ocds_multiple_buyers_extension/archive/master.zip
 contract_suppliers,,master,https://raw.githubusercontent.com/open-contracting/ocds_contract_suppliers_extension/master/,https://github.com/open-contracting/ocds_contract_suppliers_extension/archive/master.zip
-contracts_register,,master,https://raw.githubusercontent.com/open-contracting/ocds_contractRegister_extension/,https://github.com/open-contracting-extensions/ocds_contractRegister_extension/archive/master.zip
+contracts_register,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_contractRegister_extension/master/,https://github.com/open-contracting-extensions/ocds_contractRegister_extension/archive/master.zip
 documentation_details,,master,https://raw.githubusercontent.com/open-contracting/ocds_documentation_extension/master/,https://github.com/open-contracting/ocds_documentation_extension/archive/master.zip
 enquiries,,master,https://raw.githubusercontent.com/open-contracting/ocds_enquiry_extension/master/,https://github.com/open-contracting/ocds_enquiry_extension/archive/master.zip
 enquiries,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting/ocds_enquiry_extension/v1.1/,https://api.github.com/repos/open-contracting/ocds_enquiry_extension/zipball/v1.1
