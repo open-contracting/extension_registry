@@ -6,6 +6,7 @@ budget_project,ppp,
 charges,ppp,
 contract,contract,
 contract_suppliers,contract,
+contracts_register,implementation,
 documentation_details,ppp,
 enquiries,tender,true
 extendsContractID,contract,
@@ -26,3 +27,4 @@ shareholders,ppp,
 signatories,contract,
 tariffs,ppp,
 transaction_milestones,ppp,
+
