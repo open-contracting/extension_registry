@@ -85,6 +85,18 @@
       "url": "https://raw.githubusercontent.com/open-contracting/ocds_contract_suppliers_extension/master/"
     },
     {
+      "category": "implementation",
+      "core": false,
+      "description": {
+        "en": "Adds fields to the contract implementation section to detail the end date, and final value of a contract."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_contractRegister_extension",
+      "name": {
+        "en": "ocds_contractRegister_extension"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contractRegister_extension/master/"
+    },
+    {
       "category": "ppp",
       "core": false,
       "description": {
