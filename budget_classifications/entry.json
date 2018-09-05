@@ -1,0 +1,14 @@
+[{
+  "name": {
+    "en" : "Budget_Classifications"
+  },
+  "description": {
+    "en": "This extension allows users to express monetary figures in different types of budget classifications."
+  },
+  "url": "https://github.com/transpresupuestaria/ocds_budget_classifications_extension/blob/master/extension.json",
+  "documentationUrl": {
+    "en": "https://github.com/transpresupuestaria/ocds_budget_classifications_extension/blob/master/README.md"
+  },
+  "core": false,
+  "category": "budgetBreakdown"
+}]
