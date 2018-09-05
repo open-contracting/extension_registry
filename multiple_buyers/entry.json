@@ -1,0 +1,14 @@
+[{
+  "name": {
+    "en" : "Multiple_Buyers_Extension"
+  },
+  "description": {
+    "en": "This extension provides a way to provide multiple buyers per contract."
+  },
+  "url": "https://github.com/transpresupuestaria/ocds_multiple_buyers_extension/blob/master/extension.json",
+  "documentationUrl": {
+    "en": "https://github.com/transpresupuestaria/ocds_multiple_buyers_extension/blob/master/README.md"
+  },
+  "core": false,
+  "category": "contract"
+}]
