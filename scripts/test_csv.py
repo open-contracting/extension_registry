@@ -69,12 +69,11 @@ def test_registry():
 
                 if csv_basename == 'extensions.csv':
                     identifiers[id] = 0
+                # Ensure every version belongs to a known extension.
+                elif id in identifiers:
+                    identifiers[id] += 1
                 else:
-                    # Ensure every version belongs to a known extension.
-                    if id in identifiers:
-                        identifiers[id] += 1
-                    else:
-                        raise Exception('extension_versions.csv: Id "{}" not in extensions.csv'.format(id))
+                    raise Exception('extension_versions.csv: Id "{}" not in extensions.csv'.format(id))
 
     # Ensure every extension has at least one version.
     for id, count in identifiers.items():
