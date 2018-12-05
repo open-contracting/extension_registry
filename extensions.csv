@@ -6,7 +6,7 @@ budget_project,ppp,
 charges,ppp,
 contract_buyer,contract,
 contract_suppliers,contract,
-contract_register,implementation,
+contract_completion,implementation,
 documentation_details,ppp,
 enquiries,tender,true
 extendsContractID,contract,
