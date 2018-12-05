@@ -4,7 +4,7 @@ bids,bids,true
 budget,ppp,
 budget_project,ppp,
 charges,ppp,
-contract,contract,
+contract_buyer,contract,
 contract_suppliers,contract,
 contract_register,implementation,
 documentation_details,ppp,
