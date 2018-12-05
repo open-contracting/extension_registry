@@ -10,7 +10,7 @@
       "name": {
         "en": "Additional Contact Points"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_additionalContactPoints_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_additionalContactPoints_extension/master/"
     },
     {
       "category": "bids",
@@ -22,7 +22,7 @@
       "name": {
         "en": "Bid statistics and details"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_bid_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/v1.1.3/"
     },
     {
       "category": "ppp",
@@ -34,7 +34,7 @@
       "name": {
         "en": "Budget Breakdown"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_budget_breakdown_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/"
     },
     {
       "category": "ppp",
@@ -46,7 +46,7 @@
       "name": {
         "en": "Budget and Projects"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_budget_projects_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_projects_extension/master/"
     },
     {
       "category": "ppp",
@@ -58,7 +58,7 @@
       "name": {
         "en": "Charges"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_charges_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_charges_extension/master/"
     },
     {
       "category": "contract",
@@ -70,7 +70,7 @@
       "name": {
         "en": "Multiple buyers - contract level"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_multiple_buyers_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_multiple_buyers_extension/master/"
     },
     {
       "category": "contract",
@@ -82,7 +82,7 @@
       "name": {
         "en": "Contract suppliers"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_contract_suppliers_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_suppliers_extension/master/"
     },
     {
       "category": "implementation",
@@ -106,7 +106,7 @@
       "name": {
         "en": "Document Details"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_documentation_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_documentation_extension/master/"
     },
     {
       "category": "tender",
@@ -118,7 +118,7 @@
       "name": {
         "en": "Enquiries"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_enquiry_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.3/"
     },
     {
       "category": "contract",
@@ -130,7 +130,7 @@
       "name": {
         "en": "Contract extensions via supplementary contract: extendsContractID"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_extendsContractID_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_extendsContractID_extension/master/"
     },
     {
       "category": "ppp",
@@ -142,7 +142,7 @@
       "name": {
         "en": "Financing"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_finance_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/master/"
     },
     {
       "category": "item",
@@ -154,7 +154,7 @@
       "name": {
         "en": "Location"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_location_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1.3/"
     },
     {
       "category": "tender",
@@ -166,7 +166,7 @@
       "name": {
         "en": "Lots"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_lots_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.3/"
     },
     {
       "category": "ppp",
@@ -178,7 +178,7 @@
       "name": {
         "en": "Metrics"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_metrics_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_metrics_extension/master/"
     },
     {
       "category": "milestones",
@@ -190,7 +190,7 @@
       "name": {
         "en": "Milestone documents"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_milestone_documents_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_milestone_documents_extension/v1.1.3/"
     },
     {
       "category": "tender",
@@ -202,7 +202,7 @@
       "name": {
         "en": "Participation Fees"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_participationFee_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_participationFee_extension/v1.1.3/"
     },
     {
       "category": "partyDetail",
@@ -214,7 +214,7 @@
       "name": {
         "en": "Party Scale"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_partyDetails_scale_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_partyDetails_scale_extension/master/"
     },
     {
       "category": "implementation",
@@ -226,7 +226,7 @@
       "name": {
         "en": "Performance Failures Extension"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_performance_failures/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_performance_failures_extension/master/"
     },
     {
       "category": "ppp",
@@ -250,7 +250,7 @@
       "name": {
         "en": "Process level title and description"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_process_title_extension/v1.1.3/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_process_title_extension/v1.1.3/"
     },
     {
       "category": "ppp",
@@ -262,7 +262,7 @@
       "name": {
         "en": "Qualification"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_qualification_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_qualification_extension/master/"
     },
     {
       "category": "tender",
@@ -274,7 +274,7 @@
       "name": {
         "en": "Requirements"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_requirements_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_requirements_extension/master/"
     },
     {
       "category": "ppp",
@@ -286,7 +286,7 @@
       "name": {
         "en": "Risk Allocation"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds-riskAllocation-extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_riskAllocation_extension/master/"
     },
     {
       "category": "ppp",
@@ -298,7 +298,7 @@
       "name": {
         "en": "Shareholders"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds-shareholders-extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_shareholders_extension/master/"
     },
     {
       "category": "contract",
@@ -310,7 +310,7 @@
       "name": {
         "en": "Signatories"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_contract_signatories_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/"
     },
     {
       "category": "ppp",
@@ -322,7 +322,7 @@
       "name": {
         "en": "Tariffs"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_tariffs_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tariffs_extension/master/"
     },
     {
       "category": "ppp",
@@ -334,7 +334,7 @@
       "name": {
         "en": "Transactions - Related Milestones"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting/ocds_transactions_relatedMilestone_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_transactions_relatedMilestone_extension/master/"
     }
   ]
 }
