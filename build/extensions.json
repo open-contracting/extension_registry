@@ -6,7 +6,7 @@
       "description": {
         "en": "For providing multiple contact points for an organization, or for providing the available languages of a contact point. For example, it may be used to provide a contact point for each language."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_additionalContactPoints_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/additionalContactPoint/",
       "id": "additionalContactPoint",
       "name": {
         "en": "Additional Contact Points"
@@ -32,7 +32,7 @@
       "description": {
         "en": "Adds a budget breakdown array to the budget object to break down a budget by source and period."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_budget_breakdown_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/budget/",
       "id": "budget",
       "name": {
         "en": "Budget Breakdown"
@@ -45,7 +45,7 @@
       "description": {
         "en": "Adds a project object to the planning object to describe the project to which the contracting process is related, including the total value of the project (not to be confused with the total value of the contracting process)."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_budget_projects_extension/",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/budget_project/",
       "id": "budget_project",
       "name": {
         "en": "Budget and Projects"
@@ -58,7 +58,7 @@
       "description": {
         "en": "Adds a charges array to the implementation object to disclose the charges to be incurred by users or government in a given period of a contract."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_charges_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/charges/",
       "id": "charges",
       "name": {
         "en": "Charges"
@@ -71,7 +71,7 @@
       "description": {
         "en": "In some cases, a single contracting process involves multiple buyers (for example, a framework that different organizations can buy from). In these cases, the multiple buyers extension can be used to specify a distinct buyer for each contract. "
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_multiple_buyers_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/contract_buyer/",
       "id": "contract_buyer",
       "name": {
         "en": "Multiple buyers - contract level"
@@ -84,7 +84,7 @@
       "description": {
         "en": "To allow explicit declaration of suppliers within the contracts block. Used when a single award to multiple suppliers results in multiple contracts to a sub-set of those awarded suppliers."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_contract_suppliers_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/contract_suppliers/",
       "id": "contract_suppliers",
       "name": {
         "en": "Contract suppliers"
@@ -97,7 +97,7 @@
       "description": {
         "en": "Adds fields to the contract implementation section to detail the end date, and final value of a contract."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_contract_completion_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/contract_completion/",
       "id": "contract_completion",
       "name": {
         "en": "Contract Completion"
@@ -110,7 +110,7 @@
       "description": {
         "en": "Extends the document object with page references, access details and author information."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_documentation_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/documentation_details/",
       "id": "documentation_details",
       "name": {
         "en": "Document Details"
@@ -136,7 +136,7 @@
       "description": {
         "en": "Under some procurement rules and processes, to extend the duration or value of a contract, or to make other substantial alterations, requires a new contract to be signed. This extension allows these relationships between two or more contracts in the same contracting process to be made explicit."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_extendsContractID_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/extendsContractID/",
       "id": "extendsContractID",
       "name": {
         "en": "Contract extensions via supplementary contract: extendsContractID"
@@ -149,7 +149,7 @@
       "description": {
         "en": "Capturing details of the finance arranged for a contract, including loans, grants and other finance sources."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_finance_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/finance/",
       "id": "finance",
       "name": {
         "en": "Financing"
@@ -188,7 +188,7 @@
       "description": {
         "en": "The metrics extension supports publication of forecasts (planning stage), targets (tender stage), agreed performance targets (award and contract stage) and results (implementation stage)."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_metrics_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/metrics/",
       "id": "metrics",
       "name": {
         "en": "Metrics"
@@ -227,7 +227,7 @@
       "description": {
         "en": "For classifying organizations as micro, sme or large."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_partyDetails_scale_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/partyScale/",
       "id": "partyScale",
       "name": {
         "en": "Party Scale"
@@ -240,7 +240,7 @@
       "description": {
         "en": "Adds fields to the implementation section to allow disclosure of an array of contracting performance failures. Based on the performance failures reporting table defined in the World Bank Framework for Disclosure in PPPs."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_performance_failures",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/performance_failures/",
       "id": "performance_failures",
       "name": {
         "en": "Performance Failures Extension"
@@ -253,7 +253,7 @@
       "description": {
         "en": "Makes changes required by the OCDS for PPPs profile, including deleting core fields. Evaluation indicators, finance summary and project details may be moved into new extensions."
       },
-      "documentation_url": "https://github.com/open-contracting/public-private-partnerships",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/ppp/",
       "id": "ppp",
       "name": {
         "en": "OCDS for PPPs Extension"
@@ -279,7 +279,7 @@
       "description": {
         "en": "Adds a pre-qualification section to an OCDS release, based on the tender object."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_qualification_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/qualification/",
       "id": "qualification",
       "name": {
         "en": "Qualification"
@@ -292,7 +292,7 @@
       "description": {
         "en": "Adds a criteria section to the tender object and responses sections to bids, awards and contracts. Based on the EU's Core Criterion and Core Evidence Vocabulary (CCCEV)."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_requirements_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/requirements/",
       "id": "requirements",
       "name": {
         "en": "Requirements"
@@ -305,7 +305,7 @@
       "description": {
         "en": "For providing the risk allocations defined in a public private partnership's contract."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds-riskAllocation-extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/risk_allocation/",
       "id": "risk_allocation",
       "name": {
         "en": "Risk Allocation"
@@ -318,7 +318,7 @@
       "description": {
         "en": "Adds company ownership fields to the organization object used in the parties array."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds-shareholders-extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/shareholders/",
       "id": "shareholders",
       "name": {
         "en": "Shareholders"
@@ -331,7 +331,7 @@
       "description": {
         "en": "Adds a signatories array to the contract object."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_contract_signatories_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/signatories/",
       "id": "signatories",
       "name": {
         "en": "Signatories"
@@ -344,7 +344,7 @@
       "description": {
         "en": "Adds fields to the contract and implementation objects to capture details of the tariffs, tolls and user fees set out in the contract and in use throughout the life of the project."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_tariffs_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/tariffs/",
       "id": "tariffs",
       "name": {
         "en": "Tariffs"
@@ -357,7 +357,7 @@
       "description": {
         "en": "Adds a relatedImplementationMilestone property to the transactions object so that disbursements can be linked with their associated milestone."
       },
-      "documentation_url": "https://github.com/open-contracting/ocds_transactions_relatedMilestone_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/transaction_milestones/",
       "id": "transaction_milestones",
       "name": {
         "en": "Transactions - Related Milestones"
