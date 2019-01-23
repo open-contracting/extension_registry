@@ -48,6 +48,7 @@ def compile_extensions_json():
             data = response.json()
 
             extensions.append({
+                'id': row['Id'],
                 'category': row['Category'],
                 'core': row['Core'] == 'true',
                 'url': version['Base URL'],
