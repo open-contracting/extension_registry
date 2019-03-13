@@ -12,6 +12,7 @@ documentation_details,ppp,
 enquiries,tender,true
 extendsContractID,contract,
 finance,ppp,
+implementationStatus,implementation,
 location,item,true
 lots,tender,true
 metrics,ppp,
@@ -22,6 +23,7 @@ performance_failures,implementation,
 ppp,ppp,
 process_title,release,true
 qualification,ppp,
+releasePublisher,release,
 requirements,tender,
 risk_allocation,ppp,
 shareholders,ppp,
