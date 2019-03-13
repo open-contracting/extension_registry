@@ -6,6 +6,7 @@ bids,2017-08-07,v1.1.1,https://raw.githubusercontent.com/open-contracting-extens
 bids,2018-01-30,v1.1.3,https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/v1.1.3/,https://api.github.com/repos/open-contracting-extensions/ocds_bid_extension/zipball/v1.1.3
 bids,2019-02-25,v1.1.4,https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/v1.1.4/,https://api.github.com/repos/open-contracting-extensions/ocds_bid_extension/zipball/v1.1.4
 budget,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/,https://github.com/open-contracting-extensions/ocds_budget_breakdown_extension/archive/master.zip
+budget_and_spend,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/,https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension/archive/master.zip
 budget_project,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_projects_extension/master/,https://github.com/open-contracting-extensions/ocds_budget_projects_extension/archive/master.zip
 charges,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_charges_extension/master/,https://github.com/open-contracting-extensions/ocds_charges_extension/archive/master.zip
 charges,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_charges_extension/v1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_charges_extension/zipball/v1.1
