@@ -24,6 +24,7 @@ ppp,ppp,
 process_title,release,true
 qualification,ppp,
 releasePublisher,release,
+releaseSource,release,
 requirements,tender,
 risk_allocation,ppp,
 shareholders,ppp,
