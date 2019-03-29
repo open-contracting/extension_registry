@@ -331,12 +331,12 @@
       "description": {
         "en": "Adds a sources array to indicate the information systems from which the data originates."
       },
-      "documentation_url": "https://bitbucket.org/izelayas/ocds_releasesource_extension/src/master/README.md",
+      "documentation_url": "https://bitbucket.org/ONCAETI/ocds_releasesource_extension/src/master/README.md",
       "id": "releaseSource",
       "name": {
         "en": "Sources"
       },
-      "url": "https://bitbucket.org/izelayas/ocds_releasesource_extension/raw/master/"
+      "url": "https://bitbucket.org/ONCAETI/ocds_releasesource_extension/raw/master/"
     },
     {
       "category": "tender",
