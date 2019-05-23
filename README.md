@@ -47,9 +47,9 @@ The CSV columns are:
 
 ## Maintenance
 
-The standard documentation renders lists of community extensions using an `extensions.js` file, that aggregates information from the registry and each extension. This file is published at [build/extensions.js](/build/extensions.js). To regenerate the file:
+The standard documentation renders lists of community extensions using an `extensions.json` file, that aggregates information from the registry and each extension. This file is published at [build/extensions.json](/build/extensions.json). To regenerate the file:
 
     pip install -r requirements.txt
     python scripts/compile.py
 
-This repository has tests to validate `extensions.csv` and `extension_versions.csv` and to check the integrity of `extensions.js`.
+This repository has tests to validate `extensions.csv` and `extension_versions.csv` and to check the integrity of `extensions.json`.
