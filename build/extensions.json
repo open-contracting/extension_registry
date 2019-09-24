@@ -381,7 +381,7 @@
       "category": "contract",
       "core": false,
       "description": {
-        "en": "Adds a signatories array to the contract object."
+        "en": "Adds a signatories array to the contract object. Use when there are additional signatories to the contract, other than the buyer and supplier."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/signatories/",
       "id": "signatories",
@@ -402,6 +402,19 @@
         "en": "Tariffs"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tariffs_extension/master/"
+    },
+    {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds a date field to indicate when the tender was published."
+      },
+      "documentation_url": "https://github.com/portaledcahn/ocds_tenderDatePublished_extension/blob/master/README.md",
+      "id": "tender_datePublished",
+      "name": {
+        "en": "Tender Date Published"
+      },
+      "url": "https://raw.githubusercontent.com/portaledcahn/ocds_tenderDatePublished_extension/master/"
     },
     {
       "category": "ppp",
