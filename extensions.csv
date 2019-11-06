@@ -12,6 +12,7 @@ documentation_details,ppp,
 enquiries,tender,true
 extendsContractID,contract,
 finance,ppp,
+guarantees,contract,
 implementationStatus,implementation,
 location,item,true
 lots,tender,true

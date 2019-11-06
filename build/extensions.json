@@ -170,6 +170,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/master/"
     },
     {
+      "category": "contract",
+      "core": false,
+      "description": {
+        "en": "Some procurement processes consider the specification of guarantees in order to ensure compliance with the terms of a contract.\n\nThere are many types of guarantees, so we consider the creation of a new extension based on the formats that are required for the Federal Treasury (Mexico). See discussion in https://github.com/open-contracting/standard/issues/651"
+      },
+      "documentation_url": "https://github.com/INAImexico/ocds_guarantees_extension",
+      "id": "guarantees",
+      "name": {
+        "en": "Guarantees"
+      },
+      "url": "https://raw.githubusercontent.com/INAImexico/ocds_guarantees_extension/master/"
+    },
+    {
       "category": "implementation",
       "core": false,
       "description": {
@@ -381,7 +394,7 @@
       "category": "contract",
       "core": false,
       "description": {
-        "en": "Adds a signatories array to the contract object."
+        "en": "Adds a signatories array to the contract object. Use when there are additional signatories to the contract, other than the buyer and supplier."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/signatories/",
       "id": "signatories",
