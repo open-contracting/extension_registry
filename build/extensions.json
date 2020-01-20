@@ -417,7 +417,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tariffs_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "transaction",
       "core": false,
       "description": {
         "en": "Adds a relatedImplementationMilestone property to the transactions object so that disbursements can be linked with their associated milestone."
