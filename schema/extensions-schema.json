@@ -11,11 +11,13 @@
     "Category": {
       "type": "string",
       "enum": [
+        "amendment",
         "award",
         "bids",
         "budget",
         "contract",
         "document",
+        "eu",
         "implementation",
         "item",
         "milestones",
