@@ -14,8 +14,6 @@ import requests_cache
 from ocdsextensionregistry import ExtensionVersion
 
 directory = Path(os.path.dirname(os.path.realpath(__file__)))
-
-# Cache requests for extensions data for an hour, for faster development.
 requests_cache.install_cache(expire_after=timedelta(hours=1))
 
 
@@ -46,8 +44,8 @@ def do_compile():
 
             response = requests.get(version['Base URL'] + 'extension.json')
             response.raise_for_status()
-            data = response.json()
 
+            data = response.json()
             extensions.append({
                 'id': row['Id'],
                 'category': row['Category'],
