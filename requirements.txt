@@ -1,6 +1,9 @@
-jsonschema
-pytest
+click
+ocdsextensionregistry
 requests
 requests-cache
+# Tests
+jsonschema
+pytest
 rfc3987
 strict-rfc3339
