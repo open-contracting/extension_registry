@@ -19,7 +19,7 @@
       "description": {
         "en": "Adds an award criteria array to the lot object, to break down award criteria by price, cost and quality."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_awardCriteriaBreakdown_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/awardCriteria/",
       "id": "awardCriteria",
       "name": {
         "en": "Award criteria breakdown"
@@ -32,7 +32,7 @@
       "description": {
         "en": "Adds an object to describe the date, time, place and other details of the bid opening."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_bidOpening_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/bidOpening/",
       "id": "bidOpening",
       "name": {
         "en": "Bid opening"
@@ -71,7 +71,7 @@
       "description": {
         "en": "Extends budget breakdown and contract implementation to allow publication of detailed budget allocations and execution for a contracting process, using classifications that can be mapped to separately published budget and spend data."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_budget_and_spend_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/budget_and_spend/",
       "id": "budget_and_spend",
       "name": {
         "en": "Budget and spending classification"
@@ -110,12 +110,25 @@
       "description": {
         "en": "Adds a communication object to the tender to describe the modalities of communication about key events."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_communication_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/communication/",
       "id": "communication",
       "name": {
         "en": "Communication"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_communication_extension/master/"
+    },
+    {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds a contract terms object to the tender and lot objects, to describe the terms governing the future contract."
+      },
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/contractTerms/",
+      "id": "contractTerms",
+      "name": {
+        "en": "Contract terms"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contractTerms_extension/master/"
     },
     {
       "category": "contract",
@@ -160,22 +173,9 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds a contract terms object to the tender and lot objects, to describe the terms governing the future contract."
-      },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_contractTerms_extension",
-      "id": "contractTerms",
-      "name": {
-        "en": "Contract terms"
-      },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contractTerms_extension/master/"
-    },
-    {
-      "category": "tender",
-      "core": false,
-      "description": {
         "en": "Adds a field to indicate the treaties, laws, regulations or other instruments that the contracting process is covered by."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_coveredBy_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/coveredBy/",
       "id": "coveredBy",
       "name": {
         "en": "Covered By"
@@ -220,6 +220,19 @@
         "en": "Enquiries"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.4/"
+    },
+    {
+      "category": "eu",
+      "core": false,
+      "description": {
+        "en": "Implements fields and codes that are specific to European law."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_eu_extension",
+      "id": "eu",
+      "name": {
+        "en": "European Union"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_eu_extension/master/"
     },
     {
       "category": "contract",
@@ -331,7 +344,7 @@
       "description": {
         "en": "Adds fields for information on options."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_options_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/options/",
       "id": "options",
       "name": {
         "en": "Options"
@@ -344,7 +357,7 @@
       "description": {
         "en": "Adds an array of Classification objects to Organization.details in order to categorize organizations."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_organizationClassification_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/organizationClassification/",
       "id": "organizationClassification",
       "name": {
         "en": "Organization classification"
@@ -357,7 +370,7 @@
       "description": {
         "en": "Adds an object to describe other requirements to participate in a contracting process."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_otherRequirements_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/otherRequirements/",
       "id": "otherRequirements",
       "name": {
         "en": "Other Requirements"
@@ -422,7 +435,7 @@
       "description": {
         "en": "This extension adds a block to describe the procurement procedure."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_procedure_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/procedure/",
       "id": "procedure",
       "name": {
         "en": "Procedure"
@@ -448,7 +461,7 @@
       "description": {
         "en": "Adds an array to the tender object to classify the procurement method rationale."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_procurementMethodRationaleClassifications_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/procurementMethodRationaleClassifications/",
       "id": "procurementMethodRationaleClassifications",
       "name": {
         "en": "Procurement method rationale classifications"
@@ -526,7 +539,7 @@
       "description": {
         "en": "Adds a second stage object to the tender and lot objects, to describe the second stage of a two-stage procedure."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_secondStageDescription_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/secondStageDescription/",
       "id": "secondStageDescription",
       "name": {
         "en": "Second stage description"
@@ -539,7 +552,7 @@
       "description": {
         "en": "Adds an object to describe the conditions for participation in a contracting process."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_selectionCriteria_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/selectionCriteria/",
       "id": "selectionCriteria",
       "name": {
         "en": "Selection Criteria"
@@ -578,7 +591,7 @@
       "description": {
         "en": "Adds an object for information about the parts of the contract that the supplier will subcontract to third parties."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_subcontracting_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/subcontracting/",
       "id": "subcontracting",
       "name": {
         "en": "Subcontracting"
@@ -591,7 +604,7 @@
       "description": {
         "en": "Adds a submission terms object to the tender and lot objects, to describe how, when and where the tenderers must submit their bids."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_submissionTerms_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/submissionTerms/",
       "id": "submissionTerms",
       "name": {
         "en": "Submission terms"
@@ -617,7 +630,7 @@
       "description": {
         "en": "Adds fields to the tender and lot objects to describe the use of techniques, such as framework agreements, dynamic purchasing systems and electronic auctions."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_techniques_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/techniques/",
       "id": "techniques",
       "name": {
         "en": "Techniques"
@@ -643,7 +656,7 @@
       "description": {
         "en": "Adds an unstructuredChanges array to the Amendment object."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_unstructuredChanges_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/unstructuredChanges/",
       "id": "unstructuredChanges",
       "name": {
         "en": "Unstructured changes"
