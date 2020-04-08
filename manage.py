@@ -89,7 +89,7 @@ def cli():
 @click.argument('url')
 def add(url):
     """
-    Add an extension to the registry.
+    Add a new extension and its live version to the registry.
     """
     parsed = urlparse(url)
     if parsed.netloc != 'github.com':
@@ -120,7 +120,7 @@ def add(url):
 @click.command()
 def refresh():
     """
-    Auto-discover and add new versions of extensions to extension_versions.csv.
+    Auto-discover and add new versions of registered extensions.
     """
     versions = []
     tags = defaultdict(list)

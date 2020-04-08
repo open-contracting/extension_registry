@@ -1,6 +1,6 @@
 # Extension Registry
 
-This repository contains the two authoritative tables (CSV files) that list the registered core and community [OCDS extensions](https://standard.open-contracting.org/latest/en/extensions/):
+This repository contains the two authoritative tables (CSV files) that list the registered [OCDS extensions](https://standard.open-contracting.org/latest/en/extensions/):
 
 * [`extensions.csv`](/extensions.csv) lists the extensions in the registry
 * [`extension_versions.csv`](/extension_versions.csv) lists each version of each extension in the registry
@@ -9,11 +9,11 @@ This repository contains the two authoritative tables (CSV files) that list the 
 
 ### Adding a new extension
 
-[Create an issue](https://github.com/open-contracting/extension_registry/issues/new) with a link to your extension. The registry's maintainers will evaluate the extension's quality and relevance and provide feedback in the created issue or the extension's repository. When appropriate, the maintainers will update `extensions.csv` and `extension_versions.csv` and close the issue.
+[Create an issue](https://github.com/open-contracting/extension_registry/issues/new) with a link to your extension. The registry's maintainers will evaluate its quality and relevance and provide feedback in the created issue or in the extension's repository. When appropriate, the maintainers will update the registry and close the issue.
 
 ### Adding a new version of an extension
 
-Create an issue or pull request about updating `extension_versions.csv`. See below for more about this file.
+Create an issue or pull request about updating `extension_versions.csv`. See below on how to edit this file.
 
 ## How to edit the CSV files
 
@@ -47,9 +47,28 @@ The CSV columns are:
 
 ## Maintenance
 
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+To add a new extension to `extensions.csv` and `extension_versions.csv`, run, for example:
+
+```bash
+./manage.py add https://github.com/org/repo
+```
+
+To check for new versions of registered extensions, run:
+
+```bash
+./manage.py refresh
+```
+
 The standard documentation renders lists of community extensions using an `extensions.json` file, that aggregates information from the registry and each extension. This file is published at [build/extensions.json](/build/extensions.json). To regenerate the file:
 
-    pip install -r requirements.txt
-    ./manage.py compile
+```bash
+./manage.py compile
+```
 
 This repository has tests to validate `extensions.csv` and `extension_versions.csv` and to check the integrity of `extensions.json`.
