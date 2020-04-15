@@ -222,6 +222,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.4/"
     },
     {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds a object to the Tender object to describe the assets used for the provision of public services."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_essentialAssets_extension",
+      "id": "essentialAssets",
+      "name": {
+        "en": "Essential assets"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_essentialAssets_extension/master/"
+    },
+    {
       "category": "eu",
       "core": false,
       "description": {
