@@ -29,6 +29,7 @@ milestone_documents,milestones,true
 options,tender,
 organizationClassification,partyDetail,
 otherRequirements,tender,
+pagination,package,
 participation_fee,tender,true
 partyScale,partyDetail,
 performance_failures,implementation,
