@@ -188,7 +188,7 @@
       "description": {
         "en": "Adds an object to the Tender object to describe a design contest."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_designContest_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/designContest/",
       "id": "designContest",
       "name": {
         "en": "Design contest"
@@ -227,7 +227,7 @@
       "description": {
         "en": "Adds a object to the Tender object to describe the assets used for the provision of public services."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_essentialAssets_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/essentialAssets/master/",
       "id": "essentialAssets",
       "name": {
         "en": "Essential assets"
@@ -240,7 +240,7 @@
       "description": {
         "en": "Implements fields and codes that are specific to European law."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_eu_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/eu/",
       "id": "eu",
       "name": {
         "en": "European Union"
@@ -389,6 +389,19 @@
         "en": "Other Requirements"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_otherRequirements_extension/master/"
+    },
+    {
+      "category": "package",
+      "core": false,
+      "description": {
+        "en": "Adds a links object to packages, to support pagination."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_api_extension",
+      "id": "pagination",
+      "name": {
+        "en": "API Extension"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/"
     },
     {
       "category": "tender",
