@@ -82,19 +82,6 @@
       "category": "ppp",
       "core": false,
       "description": {
-        "en": "Adds a project object to the planning object to describe the project to which the contracting process is related, including the total value of the project (not to be confused with the total value of the contracting process)."
-      },
-      "documentation_url": "https://extensions.open-contracting.org/en/extensions/budget_project/",
-      "id": "budget_project",
-      "name": {
-        "en": "Budget and Projects"
-      },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_projects_extension/master/"
-    },
-    {
-      "category": "ppp",
-      "core": false,
-      "description": {
         "en": "Adds a charges array to the implementation object to disclose the charges to be incurred by users or government in a given period of a contract."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/charges/",
@@ -199,7 +186,7 @@
       "category": "ppp",
       "core": false,
       "description": {
-        "en": "Extends the document object with page references, access details and author information."
+        "en": "Adds fields to the document object for page references, access details and author information."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/documentation_details/",
       "id": "documentation_details",
@@ -493,6 +480,19 @@
         "en": "Procurement method rationale classifications"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_procurementMethodRationaleClassifications_extension/master/"
+    },
+    {
+      "category": "ppp",
+      "core": false,
+      "description": {
+        "en": "Adds a project object to the planning object to describe the project to which the contracting process is related, including the total value of the project (not to be confused with the total value of the contracting process)."
+      },
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/budget_project/",
+      "id": "project",
+      "name": {
+        "en": "Project"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_project_extension/master/"
     },
     {
       "category": "ppp",
