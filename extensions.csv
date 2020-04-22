@@ -21,6 +21,7 @@ extendsContractID,contract,
 finance,ppp,
 guarantees,contract,
 implementationStatus,implementation,
+legalBasis,tender,
 location,item,true
 lots,tender,true
 metrics,ppp,

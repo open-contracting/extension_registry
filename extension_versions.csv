@@ -31,6 +31,7 @@ finance,,master,https://raw.githubusercontent.com/open-contracting-extensions/oc
 finance,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/v1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_finance_extension/zipball/v1.1
 guarantees,,master,https://raw.githubusercontent.com/INAImexico/ocds_guarantees_extension/master/,https://github.com/INAImexico/ocds_guarantees_extension/archive/master.zip
 implementationStatus,,master,https://raw.githubusercontent.com/INAImexico/ocds_implementationStatus_extension/master/,https://github.com/INAImexico/ocds_implementationStatus_extension/archive/master.zip
+legalBasis,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_legalBasis_extension/master/,https://github.com/open-contracting-extensions/ocds_legalBasis_extension/archive/master.zip
 location,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/master/,https://github.com/open-contracting-extensions/ocds_location_extension/archive/master.zip
 location,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_location_extension/zipball/v1.1
 location,2017-08-07,v1.1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_location_extension/zipball/v1.1.1

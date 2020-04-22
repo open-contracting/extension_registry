@@ -173,7 +173,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds an object to the Tender object to describe a design contest."
+        "en": "Adds an object to the tender object to describe a design contest."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/designContest/",
       "id": "designContest",
@@ -212,7 +212,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds a object to the Tender object to describe the assets used for the provision of public services."
+        "en": "Adds a object to the tender object to describe the assets used for the provision of public services."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/essentialAssets/master/",
       "id": "essentialAssets",
@@ -251,7 +251,7 @@
       "category": "ppp",
       "core": false,
       "description": {
-        "en": "Capturing details of the finance arranged for a contract, including loans, grants and other finance sources."
+        "en": "Adds fields to disclose the financing of the whole process and its individual contracts."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/finance/",
       "id": "finance",
@@ -285,6 +285,19 @@
         "en": "Implementation status"
       },
       "url": "https://raw.githubusercontent.com/INAImexico/ocds_implementationStatus_extension/master/"
+    },
+    {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds fields to the tender object to describe the legal basis of the procedure."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_legalBasis_extension",
+      "id": "legalBasis",
+      "name": {
+        "en": "Legal basis"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_legalBasis_extension/master/"
     },
     {
       "category": "item",
