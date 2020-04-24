@@ -214,7 +214,7 @@
       "description": {
         "en": "Adds a object to the tender object to describe the assets used for the provision of public services."
       },
-      "documentation_url": "https://extensions.open-contracting.org/en/extensions/essentialAssets/master/",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/essentialAssets/",
       "id": "essentialAssets",
       "name": {
         "en": "Essential assets"
@@ -396,10 +396,10 @@
       "description": {
         "en": "Adds a links object to packages, to support pagination."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_api_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/pagination/",
       "id": "pagination",
       "name": {
-        "en": "API Extension"
+        "en": "Pagination"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/"
     },
@@ -552,7 +552,7 @@
       "description": {
         "en": "Adds fields to lots, to describe the options for the renewal of contracts."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_renewal_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/renewal/",
       "id": "renewal",
       "name": {
         "en": "Renewal"
