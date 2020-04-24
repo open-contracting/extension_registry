@@ -72,6 +72,7 @@ project,,master,https://raw.githubusercontent.com/open-contracting-extensions/oc
 qualification,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_qualification_extension/master/,https://github.com/open-contracting-extensions/ocds_qualification_extension/archive/master.zip
 releasePublisher,,master,https://raw.githubusercontent.com/CompraNet/ocds_releasePublisher_extension/master/,https://github.com/CompraNet/ocds_releasePublisher_extension/archive/master.zip
 releaseSource,,master,https://bitbucket.org/ONCAETI/ocds_releasesource_extension/raw/master/,https://bitbucket.org/ONCAETI/ocds_releasesource_extension/get/master.zip
+renewal,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_renewal_extension/master/,https://github.com/open-contracting-extensions/ocds_renewal_extension/archive/master.zip
 requirements,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_requirements_extension/master/,https://github.com/open-contracting-extensions/ocds_requirements_extension/archive/master.zip
 risk_allocation,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_riskAllocation_extension/master/,https://github.com/open-contracting-extensions/ocds_riskAllocation_extension/archive/master.zip
 risk_allocation,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_riskAllocation_extension/v1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_riskAllocation_extension/zipball/v1.1

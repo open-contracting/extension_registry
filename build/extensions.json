@@ -292,7 +292,7 @@
       "description": {
         "en": "Adds fields to the tender object to describe the legal basis of the procedure."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_legalBasis_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/legalBasis/",
       "id": "legalBasis",
       "name": {
         "en": "Legal basis"
@@ -545,6 +545,19 @@
         "en": "Sources"
       },
       "url": "https://bitbucket.org/ONCAETI/ocds_releasesource_extension/raw/master/"
+    },
+    {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds fields to lots, to describe the options for the renewal of contracts."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_renewal_extension",
+      "id": "renewal",
+      "name": {
+        "en": "Renewal"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_renewal_extension/master/"
     },
     {
       "category": "tender",
