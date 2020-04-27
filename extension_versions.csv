@@ -70,6 +70,7 @@ process_title,2019-02-25,v1.1.4,https://raw.githubusercontent.com/open-contracti
 procurementMethodRationaleClassifications,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_procurementMethodRationaleClassifications_extension/master/,https://github.com/open-contracting-extensions/ocds_procurementMethodRationaleClassifications_extension/archive/master.zip
 project,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_project_extension/master/,https://github.com/open-contracting-extensions/ocds_project_extension/archive/master.zip
 qualification,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_qualification_extension/master/,https://github.com/open-contracting-extensions/ocds_qualification_extension/archive/master.zip
+recurrence,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_recurrence_extension/master/,https://github.com/open-contracting-extensions/ocds_recurrence_extension/archive/master.zip
 releasePublisher,,master,https://raw.githubusercontent.com/CompraNet/ocds_releasePublisher_extension/master/,https://github.com/CompraNet/ocds_releasePublisher_extension/archive/master.zip
 releaseSource,,master,https://bitbucket.org/ONCAETI/ocds_releasesource_extension/raw/master/,https://bitbucket.org/ONCAETI/ocds_releasesource_extension/get/master.zip
 renewal,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_renewal_extension/master/,https://github.com/open-contracting-extensions/ocds_renewal_extension/archive/master.zip

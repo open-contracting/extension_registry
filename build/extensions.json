@@ -521,6 +521,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_qualification_extension/master/"
     },
     {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds fields for information on the recurrence of the contracting process."
+      },
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/recurrence/",
+      "id": "recurrence",
+      "name": {
+        "en": "Recurrence"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_recurrence_extension/master/"
+    },
+    {
       "category": "release",
       "core": false,
       "description": {
