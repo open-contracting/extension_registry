@@ -99,7 +99,7 @@ def add(url):
         base_url = parsed._replace(netloc='raw.githubusercontent.com', path=parsed.path + '/master/').geturl()
         download_url = url + '/archive/master.zip'
     elif parsed.netloc == 'gitlab.com':
-        base_url = url + '/-/raw/master/extension.json'
+        base_url = url + '/-/raw/master/'
         download_url = '{}/-/archive/master/{}-master.zip'.format(url, name)
 
     with open(directory / 'extension_versions.csv') as f:

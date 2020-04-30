@@ -160,7 +160,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds a field to indicate the treaties, laws, regulations or other instruments that the contracting process is covered by."
+        "en": "Adds a field to indicate the treaties that the contracting process is covered by."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/coveredBy/",
       "id": "coveredBy",
@@ -651,6 +651,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/"
     },
     {
+      "category": "",
+      "core": false,
+      "description": {
+        "en": "Add a statusDetails field to Tender, Award and Contract object"
+      },
+      "documentation_url": "https://gitlab.com/dncp-opendata/ocds_statusdetails_extension",
+      "id": "statusDetails",
+      "name": {
+        "en": "Status Details"
+      },
+      "url": "https://gitlab.com/dncp-opendata/ocds_statusdetails_extension/-/raw/master/"
+    },
+    {
       "category": "award",
       "core": false,
       "description": {
@@ -708,7 +721,7 @@
       "description": {
         "en": "Adds an array of classification objects to the tender object, in order to categorize the procedure as a whole."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_tenderClassification_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/tenderClassification/",
       "id": "tenderClassification",
       "name": {
         "en": "Tender classification"
