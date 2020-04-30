@@ -90,17 +90,25 @@ def add(url):
     Add a new extension and its live version to the registry.
     """
     parsed = urlparse(url)
-    if parsed.netloc != 'github.com':
-        raise click.BadParameter('URL must be of the form https://github.com/org/repo')
+    if parsed.netloc not in ('github.com', 'gitlab.com'):
+        raise click.BadParameter('URL must be of the form https://github.com/org/repo or https://gitlab.com/org/repo')
 
-    base_url = parsed._replace(netloc='raw.githubusercontent.com', path=parsed.path + '/master/').geturl()
+    name = url.rsplit('/', 1)[-1]
+
+    if parsed.netloc == 'github.com':
+        base_url = parsed._replace(netloc='raw.githubusercontent.com', path=parsed.path + '/master/').geturl()
+        download_url = url + '/archive/master.zip'
+    elif parsed.netloc == 'gitlab.com':
+        base_url = url + '/-/raw/master/extension.json'
+        download_url = '{}/-/archive/master/{}-master.zip'.format(url, name)
+
     with open(directory / 'extension_versions.csv') as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row['Base URL'] == base_url:
                 raise click.BadParameter('Extension version with Base URL "{}" already exists.'.format(base_url))
 
-    default = re.match(r'\Aocds_(\w+)_extension\Z', url.rsplit('/', 1)[-1])
+    default = re.match(r'\Aocds_(\w+)_extension\Z', name)
     if default:
         default = default[1]
 
@@ -108,11 +116,11 @@ def add(url):
         choices = json.load(f)['properties']['Category']['enum']
 
     _id = click.prompt('Id', default=default)
-    category = click.prompt('Category', type=click.Choice(choices))
+    category = click.prompt('Category', type=click.Choice(choices), default='')
     core = click.confirm('Core')
 
     _write('extensions.csv', [_id, category, 'true' if core else None])
-    _write('extension_versions.csv', [_id, None, 'master', base_url, url + '/archive/master.zip'])
+    _write('extension_versions.csv', [_id, None, 'master', base_url, download_url])
 
 
 @click.command()
