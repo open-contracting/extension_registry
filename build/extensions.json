@@ -157,6 +157,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_suppliers_extension/master/"
     },
     {
+      "category": "",
+      "core": false,
+      "description": {
+        "en": "Adds a country code field to the address object."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_countryCode_extension",
+      "id": "countryCode",
+      "name": {
+        "en": "Country code"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_countryCode_extension/master/"
+    },
+    {
       "category": "tender",
       "core": false,
       "description": {
