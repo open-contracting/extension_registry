@@ -742,6 +742,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tenderClassification_extension/master/"
     },
     {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds a date field to indicate when the tender was published."
+      },
+      "documentation_url": "https://github.com/portaledcahn/ocds_tenderDatePublished_extension/blob/master/README.md",
+      "id": "tender_datePublished",
+      "name": {
+        "en": "Tender Date Published"
+      },
+      "url": "https://raw.githubusercontent.com/portaledcahn/ocds_tenderDatePublished_extension/master/"
+    },
+    {
       "category": "transaction",
       "core": false,
       "description": {
