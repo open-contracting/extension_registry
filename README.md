@@ -70,7 +70,7 @@ To check for new versions of registered extensions, run:
 The standard documentation renders lists of community extensions using an `extensions.json` file, that aggregates information from the registry and each extension. This file is published at [build/extensions.json](/build/extensions.json). To regenerate the file:
 
 ```bash
-./manage.py compile
+./manage.py build
 ```
 
 This repository has tests to validate `extensions.csv` and `extension_versions.csv` and to check the integrity of `extensions.json`.

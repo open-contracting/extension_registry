@@ -1,11 +1,11 @@
 """
-Ensures that `compile.py` has been run.
+Ensures that the build has been run.
 """
 
 import logging
 import os
 
-from manage import do_compile
+from manage import do_build
 
 
 def test_build(caplog):
@@ -14,4 +14,4 @@ def test_build(caplog):
     with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'build', 'extensions.json')) as f:
         actual = f.read()
 
-    assert actual == do_compile()
+    assert actual == do_build()

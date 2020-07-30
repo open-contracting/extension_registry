@@ -17,8 +17,8 @@ directory = Path(os.path.dirname(os.path.realpath(__file__)))
 requests_cache.install_cache(expire_after=timedelta(hours=1))
 
 
-def do_compile():
-    # Collect the possible extension versions to compile.
+def do_build():
+    # Collect the possible extension versions to build.
     extension_versions = defaultdict(list)
     with open(directory / 'extension_versions.csv') as f:
         reader = csv.DictReader(f)
@@ -27,7 +27,7 @@ def do_compile():
             if row['Version'] not in ('v1.1', 'v1.1.1'):
                 extension_versions[row['Id']].append(row)
 
-    # Collect the extension versions to compile.
+    # Collect the extension versions to build.
     extensions = []
     with open(directory / 'extensions.csv') as f:
         reader = csv.DictReader(f)
@@ -159,17 +159,17 @@ def refresh():
 
 
 @click.command()
-def compile():
+def build():
     """
     Compile build/extensions.json.
     """
     with open(os.path.join(directory, 'build', 'extensions.json'), 'w') as f:
-        f.write(do_compile())
+        f.write(do_build())
 
 
 cli.add_command(add)
 cli.add_command(refresh)
-cli.add_command(compile)
+cli.add_command(build)
 
 if __name__ == '__main__':
     cli()
