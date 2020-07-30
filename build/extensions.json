@@ -279,7 +279,7 @@
       "description": {
         "en": "Some procurement processes consider the specification of guarantees in order to ensure compliance with the terms of a contract.\n\nThere are many types of guarantees, so we consider the creation of a new extension based on the formats that are required for the Federal Treasury (Mexico). See discussion in https://github.com/open-contracting/standard/issues/651"
       },
-      "documentation_url": "https://github.com/INAImexico/ocds_guarantees_extension",
+      "documentation_url": "https://github.com/contratacionesabiertas/ocds_guarantees_extension",
       "id": "guarantees",
       "name": {
         "en": "Guarantees"
@@ -292,7 +292,7 @@
       "description": {
         "en": "In Mexico, when talking about works and services related with them it is necessary to publish a set of specific variables about its implementation. One of them is the implementation status of the work or service related with it. See discussion in https://github.com/open-contracting/standard/issues/624"
       },
-      "documentation_url": "https://github.com/INAImexico/ocds_implementationStatus_extension",
+      "documentation_url": "https://github.com/contratacionesabiertas/ocds_implementationStatus_extension",
       "id": "implementationStatus",
       "name": {
         "en": "Implementation status"
