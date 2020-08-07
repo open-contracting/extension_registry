@@ -284,7 +284,7 @@
       "name": {
         "en": "Guarantees"
       },
-      "url": "https://raw.githubusercontent.com/INAImexico/ocds_guarantees_extension/master/"
+      "url": "https://raw.githubusercontent.com/contratacionesabiertas/ocds_guarantees_extension/master/"
     },
     {
       "category": "implementation",
@@ -297,7 +297,7 @@
       "name": {
         "en": "Implementation status"
       },
-      "url": "https://raw.githubusercontent.com/INAImexico/ocds_implementationStatus_extension/master/"
+      "url": "https://raw.githubusercontent.com/contratacionesabiertas/ocds_implementationStatus_extension/master/"
     },
     {
       "category": "tender",
