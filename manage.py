@@ -63,11 +63,7 @@ def do_build():
     return json.dumps({'extensions': extensions}, ensure_ascii=False, indent=2, sort_keys=True) + '\n'
 
 
-def _write(filename, row):
-    with open(directory / filename, 'a') as f:
-        writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(row)
-
+def _sort(filename):
     with open(directory / filename, 'r') as f:
         fieldnames = next(f)
         rows = f.readlines()
@@ -76,6 +72,14 @@ def _write(filename, row):
         f.write(fieldnames)
         for row in sorted(rows):
             f.write(row)
+
+
+def _write(filename, row):
+    with open(directory / filename, 'a') as f:
+        writer = csv.writer(f, lineterminator='\n')
+        writer.writerow(row)
+
+    _sort(filename)
 
 
 @click.group()
@@ -156,6 +160,8 @@ def refresh():
                 if tag not in tags[version.id]:
                     base_url = 'https://raw.githubusercontent.com/{}/{}/'.format(name, tag)
                     writer.writerow([version.id, release['published_at'][:10], tag, base_url, release['zipball_url']])
+
+    _sort('extension_versions.csv')
 
 
 @click.command()
