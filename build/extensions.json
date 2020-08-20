@@ -50,7 +50,7 @@
       "name": {
         "en": "Bid statistics and details"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/v1.1.5/"
     },
     {
       "category": "ppp",
@@ -162,7 +162,7 @@
       "description": {
         "en": "Adds a country code field to the address object."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_countryCode_extension",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/countryCode/",
       "id": "countryCode",
       "name": {
         "en": "Country code"
@@ -219,7 +219,7 @@
       "name": {
         "en": "Enquiries"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.5/"
     },
     {
       "category": "tender",
@@ -323,20 +323,20 @@
       "name": {
         "en": "Location"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1.5/"
     },
     {
       "category": "tender",
       "core": true,
       "description": {
-        "en": "A tender process may be divided into lots, where bidders can bid on one or more lots. Details of each lot can be provided here. Items, documents and other features can then reference the lot they are related to using relatedLot. Where no relatedLot identifier is given, the values should be interpreted as applicable to the whole tender."
+        "en": "A tender process can be divided into lots, where bidders can bid on one or more lots. Details of each lot can be provided here. Items, documents and other features may then reference the lot they are related to using relatedLot. Where no relatedLot identifier is given, the values ought to be interpreted as applicable to the whole tender."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/lots/",
       "id": "lots",
       "name": {
         "en": "Lots"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.5/"
     },
     {
       "category": "ppp",
@@ -362,7 +362,7 @@
       "name": {
         "en": "Milestone documents"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_milestone_documents_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_milestone_documents_extension/v1.1.5/"
     },
     {
       "category": "tender",
@@ -427,7 +427,7 @@
       "name": {
         "en": "Participation Fees"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_participationFee_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_participationFee_extension/v1.1.5/"
     },
     {
       "category": "partyDetail",
@@ -492,7 +492,7 @@
       "name": {
         "en": "Process level title and description"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_process_title_extension/v1.1.4/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_process_title_extension/v1.1.5/"
     },
     {
       "category": "tender",
