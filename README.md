@@ -1,7 +1,5 @@
 # Extension Registry
 
-![CI](https://github.com/open-contracting/extension_registry/workflows/CI/badge.svg)
-
 This repository contains the two authoritative tables (CSV files) that list the registered [OCDS extensions](https://standard.open-contracting.org/latest/en/extensions/):
 
 * [`extensions.csv`](/extensions.csv) lists the extensions in the registry
