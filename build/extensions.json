@@ -269,7 +269,7 @@
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/finance/",
       "id": "finance",
       "name": {
-        "en": "Financing"
+        "en": "Finance"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/master/"
     },
@@ -459,7 +459,7 @@
       "category": "ppp",
       "core": false,
       "description": {
-        "en": "Makes changes required by the OCDS for PPPs profile, including deleting core fields. Evaluation indicators, finance summary and project details may be moved into new extensions."
+        "en": "Makes changes required by the OCDS for PPPs profile. Evaluation indicators, finance summary and project details may be moved into new extensions."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/ppp/",
       "id": "ppp",
@@ -576,7 +576,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds fields to lots, to describe the options for the renewal of contracts."
+        "en": "Adds fields to the Tender and Lot objects to describe the options for the renewal of contracts."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/renewal/",
       "id": "renewal",
@@ -732,7 +732,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds an array of classification objects to the tender object, in order to categorize the procedure as a whole."
+        "en": "Adds an array of classification objects to the tender object, in order to categorize the procedure or call-off as a whole."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/tenderClassification/",
       "id": "tenderClassification",
