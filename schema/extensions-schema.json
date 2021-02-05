@@ -16,7 +16,6 @@
         "bids",
         "budget",
         "contract",
-        "document",
         "eu",
         "implementation",
         "item",
@@ -24,13 +23,10 @@
         "package",
         "parties",
         "partyDetail",
-        "period",
-        "planning",
         "ppp",
         "release",
         "tender",
-        "transaction",
-        "value"
+        "transaction"
       ]
     },
     "Core": {
