@@ -87,7 +87,7 @@ def cli():
     pass
 
 
-@click.command()
+@cli.command()
 @click.argument('url')
 def add(url):
     """
@@ -127,7 +127,7 @@ def add(url):
     _write('extension_versions.csv', [_id, None, 'master', base_url, download_url])
 
 
-@click.command()
+@cli.command()
 def refresh():
     """
     Auto-discover and add new versions of registered extensions.
@@ -164,7 +164,7 @@ def refresh():
     _sort('extension_versions.csv')
 
 
-@click.command()
+@cli.command()
 def build():
     """
     Compile build/extensions.json.
@@ -172,10 +172,6 @@ def build():
     with open(os.path.join(directory, 'build', 'extensions.json'), 'w') as f:
         f.write(do_build())
 
-
-cli.add_command(add)
-cli.add_command(refresh)
-cli.add_command(build)
 
 if __name__ == '__main__':
     cli()
