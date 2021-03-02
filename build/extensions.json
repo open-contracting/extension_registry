@@ -245,7 +245,7 @@
       "name": {
         "en": "European Union"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_eu_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_eu_extension/1.1/"
     },
     {
       "category": "contract",
@@ -388,7 +388,7 @@
       "name": {
         "en": "Organization classification"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_organizationClassification_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_organizationClassification_extension/1.1/"
     },
     {
       "category": "tender",
