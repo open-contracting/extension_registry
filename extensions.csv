@@ -39,7 +39,6 @@ procedure,tender,
 process_title,release,true
 procurementMethodRationaleClassifications,tender,
 project,ppp,
-qualification,ppp,
 recurrence,tender,
 releasePublisher,release,
 releaseSource,release,
