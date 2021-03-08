@@ -521,19 +521,6 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_project_extension/master/"
     },
     {
-      "category": "ppp",
-      "core": false,
-      "description": {
-        "en": "Adds a pre-qualification section to an OCDS release, based on the tender object."
-      },
-      "documentation_url": "https://extensions.open-contracting.org/en/extensions/qualification/",
-      "id": "qualification",
-      "name": {
-        "en": "Qualification"
-      },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_qualification_extension/master/"
-    },
-    {
       "category": "tender",
       "core": false,
       "description": {
