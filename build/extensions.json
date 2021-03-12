@@ -53,7 +53,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/v1.1.5/"
     },
     {
-      "category": "ppp",
+      "category": "budget",
       "core": false,
       "description": {
         "en": "Adds a budget breakdown array to the budget object to break down a budget by source and period."
@@ -79,7 +79,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_and_spend_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "implementation",
       "core": false,
       "description": {
         "en": "Adds a charges array to the implementation object to disclose the charges to be incurred by users or government in a given period of a contract."
@@ -196,7 +196,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_designContest_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "document",
       "core": false,
       "description": {
         "en": "Adds fields to the document object for page references, access details and author information."
@@ -235,7 +235,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_essentialAssets_extension/master/"
     },
     {
-      "category": "eu",
+      "category": "",
       "core": false,
       "description": {
         "en": "Implements fields and codes that are specific to European law."
@@ -261,7 +261,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_extendsContractID_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "",
       "core": false,
       "description": {
         "en": "Adds fields to disclose the financing of the whole process and its individual contracts."
@@ -339,7 +339,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.5/"
     },
     {
-      "category": "ppp",
+      "category": "",
       "core": false,
       "description": {
         "en": "The metrics extension supports publication of forecasts (planning stage), targets (tender stage), agreed performance targets (award and contract stage) and results (implementation stage)."
@@ -456,7 +456,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_performance_failures_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "",
       "core": false,
       "description": {
         "en": "Makes changes required by the OCDS for PPPs profile. Evaluation indicators, finance summary and project details may be moved into new extensions."
@@ -508,7 +508,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_procurementMethodRationaleClassifications_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "planning",
       "core": false,
       "description": {
         "en": "Adds a project object to the planning object to describe the project to which the contracting process is related, including the total value of the project (not to be confused with the total value of the contracting process)."
@@ -586,7 +586,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_requirements_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "contract",
       "core": false,
       "description": {
         "en": "For providing the risk allocations defined in a public private partnership's contract."
@@ -625,7 +625,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_selectionCriteria_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "parties",
       "core": false,
       "description": {
         "en": "Adds company ownership fields to the organization object used in the parties array."
@@ -690,7 +690,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_submissionTerms_extension/master/"
     },
     {
-      "category": "ppp",
+      "category": "",
       "core": false,
       "description": {
         "en": "Adds fields to the contract and implementation objects to capture details of the tariffs, tolls and user fees set out in the contract and in use throughout the life of the project."
