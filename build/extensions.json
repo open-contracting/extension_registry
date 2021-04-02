@@ -108,6 +108,19 @@
       "category": "tender",
       "core": false,
       "description": {
+        "en": "Adds a field to the tender object in a framework agreement call-off to indicate if it is competitive or direct."
+      },
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/competitive/",
+      "id": "competitive",
+      "name": {
+        "en": "Competitive"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_competitive_extension/master/"
+    },
+    {
+      "category": "tender",
+      "core": false,
+      "description": {
         "en": "Adds a contract terms object to the tender and lot objects, to describe the terms governing the future contract."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/contractTerms/",
