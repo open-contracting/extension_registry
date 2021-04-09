@@ -274,7 +274,7 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_extendsContractID_extension/master/"
     },
     {
-      "category": "",
+      "category": "planning",
       "core": false,
       "description": {
         "en": "Adds fields to disclose the financing of the whole process and its individual contracts."

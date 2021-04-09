@@ -20,7 +20,7 @@ enquiries,tender,true
 essentialAssets,tender,
 eu,,
 extendsContractID,contract,
-finance,,
+finance,planning,
 guarantees,contract,
 implementationStatus,implementation,
 legalBasis,tender,
