@@ -763,7 +763,7 @@
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/transaction_milestones/",
       "id": "transaction_milestones",
       "name": {
-        "en": "Transactions - Related Milestones"
+        "en": "Transaction related milestones"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_transactions_relatedMilestone_extension/master/"
     },
