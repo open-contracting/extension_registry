@@ -13,7 +13,7 @@ import requests
 import requests_cache
 from ocdsextensionregistry import ExtensionVersion
 
-directory = Path(os.path.dirname(os.path.realpath(__file__)))
+directory = Path(__file__).resolve().parent
 requests_cache.install_cache(expire_after=timedelta(hours=1))
 
 
