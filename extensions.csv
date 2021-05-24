@@ -1,6 +1,7 @@
 Id,Category,Core
 additionalContactPoint,parties,
 awardCriteria,tender,
+beneficialOwners,parties,
 bidOpening,tender,
 bids,bids,true
 budget,budget,
