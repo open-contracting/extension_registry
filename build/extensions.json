@@ -27,6 +27,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_awardCriteria_extension/master/"
     },
     {
+      "category": "parties",
+      "core": false,
+      "description": {
+        "en": "Adds a beneficialOwners array to the organization object to indicate the beneficial owners of a organization."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_beneficialOwners_extension",
+      "id": "beneficialOwners",
+      "name": {
+        "en": "Beneficial Owners"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_beneficialOwners_extension/master/"
+    },
+    {
       "category": "tender",
       "core": false,
       "description": {
