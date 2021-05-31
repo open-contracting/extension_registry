@@ -29,6 +29,7 @@ extendsContractID,,master,https://raw.githubusercontent.com/open-contracting-ext
 finance,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/master/,https://github.com/open-contracting-extensions/ocds_finance_extension/archive/master.zip
 guarantees,,master,https://raw.githubusercontent.com/contratacionesabiertas/ocds_guarantees_extension/master/,https://github.com/contratacionesabiertas/ocds_guarantees_extension/archive/master.zip
 implementationStatus,,master,https://raw.githubusercontent.com/contratacionesabiertas/ocds_implementationStatus_extension/master/,https://github.com/contratacionesabiertas/ocds_implementationStatus_extension/archive/master.zip
+itemAttributes,,master,https://gitlab.com/dncp-opendata/ocds_item_attributes_extension//-/raw/master/,https://gitlab.com/dncp-opendata/ocds_item_attributes_extension//-/archive/master/-master.zip
 legalBasis,,1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_legalBasis_extension/1.1/,https://github.com/open-contracting-extensions/ocds_legalBasis_extension/archive/1.1.zip
 location,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/master/,https://github.com/open-contracting-extensions/ocds_location_extension/archive/master.zip
 location,2019-02-25,v1.1.4,https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1.4/,https://api.github.com/repos/open-contracting-extensions/ocds_location_extension/zipball/v1.1.4
