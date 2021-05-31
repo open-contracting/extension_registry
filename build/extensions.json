@@ -365,6 +365,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.5/"
     },
     {
+      "category": "item",
+      "core": false,
+      "description": {
+        "en": "Adds fields to the item object relevant to the procurement of medicines."
+      },
+      "documentation_url": "https://www.example.com/",
+      "id": "medicine",
+      "name": {
+        "en": "Medicine"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_medicine_extension/master/"
+    },
+    {
       "category": "",
       "core": false,
       "description": {

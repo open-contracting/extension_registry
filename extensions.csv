@@ -27,6 +27,7 @@ implementationStatus,implementation,
 legalBasis,tender,
 location,item,true
 lots,tender,true
+medicine,item,
 metrics,,
 milestone_documents,milestones,true
 options,tender,
