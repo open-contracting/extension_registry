@@ -370,7 +370,7 @@
       "description": {
         "en": "Adds fields to the item object relevant to the procurement of medicines."
       },
-      "documentation_url": "https://www.example.com/",
+      "documentation_url": "https://extensions.open-contracting.org/en/extensions/medicine/master/",
       "id": "medicine",
       "name": {
         "en": "Medicine"
