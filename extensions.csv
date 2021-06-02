@@ -24,6 +24,7 @@ extendsContractID,contract,
 finance,planning,
 guarantees,contract,
 implementationStatus,implementation,
+itemAttributes,item,
 legalBasis,tender,
 location,item,true
 lots,tender,true
