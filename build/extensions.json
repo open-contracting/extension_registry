@@ -326,6 +326,19 @@
       "url": "https://raw.githubusercontent.com/contratacionesabiertas/ocds_implementationStatus_extension/master/"
     },
     {
+      "category": "item",
+      "core": false,
+      "description": {
+        "en": "Adds a generic list of attributes to the item object"
+      },
+      "documentation_url": "https://gitlab.com/dncp-opendata/ocds_item_attributes_extension",
+      "id": "itemAttributes",
+      "name": {
+        "en": "Item attributes"
+      },
+      "url": "https://gitlab.com/dncp-opendata/ocds_item_attributes_extension//-/raw/master/"
+    },
+    {
       "category": "tender",
       "core": false,
       "description": {
