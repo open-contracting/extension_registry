@@ -35,7 +35,7 @@ def do_build():
             versions = extension_versions[row['Id']]
 
             # Prefer frozen versions to live versions.
-            frozen_versions = list(filter(lambda version: version['Date'], versions))
+            frozen_versions = [version for version in versions if version['Date']]
             if frozen_versions:
                 versions = frozen_versions
 
