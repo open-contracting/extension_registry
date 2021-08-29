@@ -433,7 +433,7 @@
       "category": "partyDetail",
       "core": false,
       "description": {
-        "en": "Adds an array of Classification objects to Organization.details in order to categorize organizations."
+        "en": "Adds an array of classification objects to a party's details in order to categorize organizations."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/organizationClassification/",
       "id": "organizationClassification",
@@ -797,7 +797,7 @@
       "category": "transaction",
       "core": false,
       "description": {
-        "en": "Adds a relatedImplementationMilestone property to the transactions object so that disbursements can be linked with their associated milestone."
+        "en": "Adds a relatedImplementationMilestone field to transaction objects, so that payments against a contract can be linked with an implementation milestone."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/transaction_milestones/",
       "id": "transaction_milestones",
