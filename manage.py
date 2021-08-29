@@ -6,7 +6,7 @@ import re
 from collections import defaultdict
 from datetime import timedelta
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlsplit
 
 import click
 import requests
@@ -93,7 +93,7 @@ def add(url):
     """
     Add a new extension and its live version to the registry.
     """
-    parsed = urlparse(url)
+    parsed = urlsplit(url)
     if parsed.netloc not in ('github.com', 'gitlab.com'):
         raise click.BadParameter('URL must be of the form https://github.com/org/repo or https://gitlab.com/org/repo')
 
@@ -141,7 +141,7 @@ def refresh():
             version = ExtensionVersion(row)
             if version.date:
                 tags[version.id].append(version.version)
-            elif urlparse(version.base_url).netloc == 'raw.githubusercontent.com':
+            elif urlsplit(version.base_url).netloc == 'raw.githubusercontent.com':
                 versions.append(version)
             else:
                 click.echo('{} not supported, skipping...'.format(version.base_url))
