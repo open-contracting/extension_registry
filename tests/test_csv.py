@@ -20,7 +20,7 @@ def test_registry():
     identifiers = {}
 
     for csv_basename, uniqueness in configuration.items():
-        schema_basename = '{}-schema.json'.format(os.path.splitext(csv_basename)[0])
+        schema_basename = f'{os.path.splitext(csv_basename)[0]}-schema.json'
 
         with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'schema', schema_basename)) as f:
             schema = json.load(f)
@@ -43,7 +43,7 @@ def test_registry():
                         del row[key]
 
                 for error in validator(schema, format_checker=FormatChecker()).iter_errors(row):
-                    raise Exception('{}: {} ({})\n'.format(id, error.message, '/'.join(error.absolute_schema_path)))
+                    raise Exception(f"{id}: {error.message} ({'/'.join(error.absolute_schema_path)})\n")
 
                 # Validate that URLs resolve.
                 if row.get('Base URL'):
@@ -58,13 +58,12 @@ def test_registry():
                     value = row[key]
                     if scope:
                         if value in seen[scope][row[scope]][key]:
-                            raise Exception('{}: Duplicate {} "{}" in scope of {} "{}" on line {}'.format(
-                                csv_basename, key, value, scope, row[scope], reader.line_num))
+                            raise Exception(f'{csv_basename}: Duplicate {key} "{value}" on line {reader.line_num}'
+                                            f' in scope of {scope} "{row[scope]}"')
                         seen[scope][row[scope]][key].add(value)
                     else:
                         if value in seen[key]:
-                            raise Exception('{}: Duplicate {} "{}" on line {}'.format(
-                                csv_basename, key, value, reader.line_num))
+                            raise Exception(f'{csv_basename}: Duplicate {key} "{value}" on line {reader.line_num}')
                         seen[key].add(value)
 
                 if csv_basename == 'extensions.csv':
@@ -73,9 +72,9 @@ def test_registry():
                 elif id in identifiers:
                     identifiers[id] += 1
                 else:
-                    raise Exception('extension_versions.csv: Id "{}" not in extensions.csv'.format(id))
+                    raise Exception(f'extension_versions.csv: Id "{id}" not in extensions.csv')
 
     # Ensure every extension has at least one version.
     for id, count in identifiers.items():
         if not count:
-            raise Exception('extensions.csv: Id "{}" not in extension_versions.csv'.format(id))
+            raise Exception(f'extensions.csv: Id "{id}" not in extension_versions.csv')

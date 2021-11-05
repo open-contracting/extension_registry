@@ -104,13 +104,13 @@ def add(url):
         download_url = url + '/archive/master.zip'
     elif parsed.netloc == 'gitlab.com':
         base_url = url + '/-/raw/master/'
-        download_url = '{}/-/archive/master/{}-master.zip'.format(url, name)
+        download_url = f'{url}/-/archive/master/{name}-master.zip'
 
     with open(directory / 'extension_versions.csv') as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row['Base URL'] == base_url:
-                raise click.BadParameter('Extension version with Base URL "{}" already exists.'.format(base_url))
+                raise click.BadParameter(f'Extension version with Base URL "{base_url}" already exists.')
 
     default = re.match(r'\Aocds_(\w+)_extension\Z', name)
     if default:
@@ -144,13 +144,13 @@ def refresh():
             elif urlsplit(version.base_url).netloc == 'raw.githubusercontent.com':
                 versions.append(version)
             else:
-                click.echo('{} not supported, skipping...'.format(version.base_url))
+                click.echo(f'{version.base_url} not supported, skipping...')
 
     with open(directory / 'extension_versions.csv', 'a') as f:
         writer = csv.writer(f, lineterminator='\n')
         for version in versions:
             name = version.repository_full_name
-            url = 'https://api.github.com/repos/{}/releases?per_page=100'.format(name)
+            url = f'https://api.github.com/repos/{name}/releases?per_page=100'
 
             response = requests.get(url)
             response.raise_for_status()
@@ -158,7 +158,7 @@ def refresh():
             for release in response.json():
                 tag = release['tag_name']
                 if tag not in tags[version.id]:
-                    base_url = 'https://raw.githubusercontent.com/{}/{}/'.format(name, tag)
+                    base_url = f'https://raw.githubusercontent.com/{name}/{tag}/'
                     writer.writerow([version.id, release['published_at'][:10], tag, base_url, release['zipball_url']])
 
     _sort('extension_versions.csv')
