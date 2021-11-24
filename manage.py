@@ -9,12 +9,11 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 import click
-import requests
 import requests_cache
 from ocdsextensionregistry import ExtensionVersion
 
 directory = Path(__file__).resolve().parent
-requests_cache.install_cache(expire_after=timedelta(hours=1))
+session = requests_cache.CachedSession(expire_after=timedelta(hours=1))
 
 
 def do_build():
@@ -42,7 +41,7 @@ def do_build():
             # Get the most recent frozen version. We presently have no strategy for choosing between live versions.
             version = max(versions, key=lambda version: version['Date'])
 
-            response = requests.get(version['Base URL'] + 'extension.json')
+            response = session.get(version['Base URL'] + 'extension.json')
             response.raise_for_status()
 
             data = response.json()
@@ -152,7 +151,7 @@ def refresh():
             name = version.repository_full_name
             url = f'https://api.github.com/repos/{name}/releases?per_page=100'
 
-            response = requests.get(url)
+            response = session.get(url)
             response.raise_for_status()
 
             for release in response.json():
