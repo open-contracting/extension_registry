@@ -1,0 +1,9 @@
+click
+ocdsextensionregistry
+requests
+requests-cache
+# Tests
+jsonschema
+pytest
+rfc3339-validator
+rfc3987
