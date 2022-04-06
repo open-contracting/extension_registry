@@ -32,7 +32,7 @@ jsonref==0.2
     # via ocdsextensionregistry
 jsonschema==4.2.1
     # via -r requirements.in
-ocdsextensionregistry==0.1.6
+ocdsextensionregistry==0.1.12
     # via -r requirements.in
 packaging==21.3
     # via pytest
