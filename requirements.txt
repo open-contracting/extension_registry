@@ -51,7 +51,7 @@ requests==2.26.0
     #   -r requirements.in
     #   ocdsextensionregistry
     #   requests-cache
-requests-cache==0.8.1
+requests-cache==0.9.4
     # via
     #   -r requirements.in
     #   ocdsextensionregistry
