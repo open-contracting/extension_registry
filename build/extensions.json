@@ -745,7 +745,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds a sustainability array and a hasSustainability field to the tender and lot levels to identify if this process is related to Sustainable Public Procurement (SPP)."
+        "en": "Adds fields to the tender and lot objects, to provide information related to Sustainable Public Procurement."
       },
       "documentation_url": "https://github.com/open-contracting-extensions/ocds_sustainability_extension",
       "id": "sustainability",
