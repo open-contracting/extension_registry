@@ -134,6 +134,16 @@ def refresh():
     versions = []
     tags = defaultdict(list)
 
+    yanked = {
+        # Contain Sphinx directives.
+        'bids': {'v1.1', 'v1.1.1', 'v1.1.3'},
+        'enquiries': {'v1.1.3'},
+        'location': {'v1.1.1', 'v1.1.3'},
+        'lots': {'v1.1', 'v1.1.1', 'v1.1.3'},
+        # "Non-consecutive header level increase".
+        'process_title': {'v1.1', 'v1.1.1'},
+    }
+
     with open(directory / 'extension_versions.csv', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -156,7 +166,7 @@ def refresh():
 
             for release in response.json():
                 tag = release['tag_name']
-                if tag not in tags[version.id]:
+                if tag not in tags[version.id] and tag not in yanked[version.id]:
                     base_url = f'https://raw.githubusercontent.com/{name}/{tag}/'
                     writer.writerow([version.id, release['published_at'][:10], tag, base_url, release['zipball_url']])
 
