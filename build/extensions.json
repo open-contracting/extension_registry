@@ -742,6 +742,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_submissionTerms_extension/master/"
     },
     {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds fields to the tender and lot objects, to provide information related to Sustainable Public Procurement."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_sustainability_extension",
+      "id": "sustainability",
+      "name": {
+        "en": "Sustainability"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_sustainability_extension/master/"
+    },
+    {
       "category": "",
       "core": false,
       "description": {
