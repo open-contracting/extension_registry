@@ -20,6 +20,8 @@ charset-normalizer==2.0.9
     # via requests
 click==8.0.3
     # via -r requirements.in
+exceptiongroup==1.0.0
+    # via pytest
 idna==3.3
     # via requests
 importlib-resources==5.4.0
@@ -38,13 +40,11 @@ packaging==21.3
     # via pytest
 pluggy==1.0.0
     # via pytest
-py==1.11.0
-    # via pytest
 pyparsing==3.0.6
     # via packaging
 pyrsistent==0.18.0
     # via jsonschema
-pytest==6.2.5
+pytest==7.2.0
     # via -r requirements.in
 requests==2.26.0
     # via
@@ -63,7 +63,7 @@ six==1.16.0
     # via
     #   rfc3339-validator
     #   url-normalize
-toml==0.10.2
+tomli==2.0.1
     # via pytest
 url-normalize==1.4.3
     # via requests-cache
