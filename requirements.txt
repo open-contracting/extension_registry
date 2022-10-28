@@ -30,7 +30,7 @@ iniconfig==1.1.1
     # via pytest
 json-merge-patch==0.2
     # via ocdsextensionregistry
-jsonref==0.2
+jsonref==1.0.0.post1
     # via ocdsextensionregistry
 jsonschema==4.2.1
     # via -r requirements.in
