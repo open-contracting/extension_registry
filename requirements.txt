@@ -14,18 +14,14 @@ attrs==21.2.0
     #   requests-cache
 cattrs==1.9.0
     # via requests-cache
-certifi==2021.10.8
+certifi==2022.12.7
     # via requests
 charset-normalizer==2.0.9
     # via requests
 click==8.0.3
     # via -r requirements.in
-exceptiongroup==1.0.0
-    # via pytest
 idna==3.3
     # via requests
-importlib-resources==5.4.0
-    # via jsonschema
 iniconfig==1.1.1
     # via pytest
 json-merge-patch==0.2
@@ -63,13 +59,9 @@ six==1.16.0
     # via
     #   rfc3339-validator
     #   url-normalize
-tomli==2.0.1
-    # via pytest
 url-normalize==1.4.3
     # via requests-cache
 urllib3==1.26.7
     # via
     #   requests
     #   requests-cache
-zipp==3.6.0
-    # via importlib-resources
