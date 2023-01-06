@@ -31,7 +31,7 @@ The CSV columns are:
 
 This file has one version (or release) of an extension per row. The row order has no effect, but alphabetical order is maintained for easier scanning and change tracking.
 
-A version of an extension can be either 'live' or 'frozen'. A live version is continously updated at the same URL; for example, an author publishes an extension on GitHub, and continously updates the default branch. A frozen version is published once at a given URL and never updated; for example, an author tags a commit and releases that version of the extension. An extension can have both live and frozen versions. An extension ought to have only one live version.
+A version of an extension can be either 'live' or 'frozen'. A live version is continuously updated at the same URL; for example, an author publishes an extension on GitHub, and continuously updates the default branch. A frozen version is published once at a given URL and never updated; for example, an author tags a commit and releases that version of the extension. An extension can have both live and frozen versions. An extension ought to have only one live version.
 
 The CSV columns are:
 
