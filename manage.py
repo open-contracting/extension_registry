@@ -63,7 +63,7 @@ def do_build():
 
 
 def _sort(filename):
-    with open(directory / filename, 'r') as f:
+    with open(directory / filename) as f:
         fieldnames = next(f)
         rows = f.readlines()
 
@@ -144,7 +144,7 @@ def refresh():
         'process_title': {'v1.1', 'v1.1.1'},
     }
 
-    with open(directory / 'extension_versions.csv', 'r') as f:
+    with open(directory / 'extension_versions.csv') as f:
         reader = csv.DictReader(f)
         for row in reader:
             version = ExtensionVersion(row)
