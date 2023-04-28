@@ -703,6 +703,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/"
     },
     {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds the SimpleIdentifier definition and related fields from the OCDS 1.2 draft."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_simpleIdentifier_extension",
+      "id": "simpleIdentifier",
+      "name": {
+        "en": "Simple identifier"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_simpleIdentifier_extension/master/"
+    },
+    {
       "category": "",
       "core": false,
       "description": {
