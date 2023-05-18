@@ -709,11 +709,11 @@
         "en": "Adds the SimpleIdentifier definition and related fields from the OCDS 1.2 draft."
       },
       "documentation_url": "https://github.com/open-contracting-extensions/ocds_simpleIdentifier_extension",
-      "id": "simpleIdentifier",
+      "id": "tender_contract_identifiers",
       "name": {
         "en": "Simple identifier"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_simpleIdentifier_extension/master/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension/master/"
     },
     {
       "category": "",
