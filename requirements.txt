@@ -20,8 +20,6 @@ charset-normalizer==2.0.9
     # via requests
 click==8.0.3
     # via -r requirements.in
-exceptiongroup==1.1.0
-    # via pytest
 idna==3.3
     # via requests
 iniconfig==1.1.1
@@ -44,7 +42,7 @@ pyrsistent==0.18.0
     # via jsonschema
 pytest==7.2.0
     # via -r requirements.in
-requests==2.26.0
+requests==2.31.0
     # via
     #   -r requirements.in
     #   ocdsextensionregistry
@@ -61,8 +59,6 @@ six==1.16.0
     # via
     #   rfc3339-validator
     #   url-normalize
-tomli==2.0.1
-    # via pytest
 url-normalize==1.4.3
     # via requests-cache
 urllib3==1.26.7
