@@ -121,19 +121,6 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds a field to the tender object in a framework agreement call-off to indicate if it is competitive or direct."
-      },
-      "documentation_url": "https://extensions.open-contracting.org/en/extensions/competitive/",
-      "id": "competitive",
-      "name": {
-        "en": "Competitive"
-      },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_competitive_extension/master/"
-    },
-    {
-      "category": "tender",
-      "core": false,
-      "description": {
         "en": "Adds a contract terms object to the tender and lot objects, to describe the terms governing the future contract."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/contractTerms/",
@@ -628,7 +615,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds a criteria section to the tender object and responses sections to bids, awards and contracts. Based on the EU's Core Criterion and Core Evidence Vocabulary (CCCEV)."
+        "en": "Adds fields to express the Core Criterion and Core Evidence Vocabulary (CCCEV)."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/requirements/",
       "id": "requirements",
@@ -708,7 +695,7 @@
       "description": {
         "en": "Adds the SimpleIdentifier definition and related fields from the OCDS 1.2 draft."
       },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_simpleIdentifier_extension",
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension",
       "id": "tender_contract_identifiers",
       "name": {
         "en": "Simple identifier"
