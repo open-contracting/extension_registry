@@ -420,7 +420,7 @@
       "category": "partyDetail",
       "core": false,
       "description": {
-        "en": "Adds an array of classification objects to a party's details in order to categorize organizations."
+        "en": "Adds an array of classification objects to an organization's details in order to categorize it."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/organizationClassification/",
       "id": "organizationClassification",
@@ -477,7 +477,7 @@
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/partyScale/",
       "id": "partyScale",
       "name": {
-        "en": "Party Scale"
+        "en": "Organization scale"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_partyDetails_scale_extension/master/"
     },
@@ -693,12 +693,12 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds the SimpleIdentifier definition and related fields from the OCDS 1.2 draft."
+        "en": "Adds fields for tender and contract identifiers."
       },
       "documentation_url": "https://github.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension",
       "id": "tender_contract_identifiers",
       "name": {
-        "en": "Simple identifier"
+        "en": "Tender and contract identifiers"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension/master/"
     },
