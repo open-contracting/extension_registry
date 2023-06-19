@@ -690,19 +690,6 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/"
     },
     {
-      "category": "tender",
-      "core": false,
-      "description": {
-        "en": "Adds fields for tender and contract identifiers."
-      },
-      "documentation_url": "https://github.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension",
-      "id": "tender_contract_identifiers",
-      "name": {
-        "en": "Tender and contract identifiers"
-      },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_tender_contract_identifiers_extension/master/"
-    },
-    {
       "category": "",
       "core": false,
       "description": {
