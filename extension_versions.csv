@@ -1,4 +1,5 @@
 Id,Date,Version,Base URL,Download URL
+1_2_draft,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_1_2_draft_extension/master/,https://github.com/open-contracting-extensions/ocds_1_2_draft_extension/archive/master.zip
 additionalContactPoint,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_additionalContactPoints_extension/master/,https://github.com/open-contracting-extensions/ocds_additionalContactPoints_extension/archive/master.zip
 awardCriteria,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_awardCriteria_extension/master/,https://github.com/open-contracting-extensions/ocds_awardCriteria_extension/archive/master.zip
 beneficialOwners,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_beneficialOwners_extension/master/,https://github.com/open-contracting-extensions/ocds_beneficialOwners_extension/archive/master.zip
@@ -18,12 +19,14 @@ contract_suppliers,,master,https://raw.githubusercontent.com/open-contracting-ex
 countryCode,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_countryCode_extension/master/,https://github.com/open-contracting-extensions/ocds_countryCode_extension/archive/master.zip
 coveredBy,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_coveredBy_extension/master/,https://github.com/open-contracting-extensions/ocds_coveredBy_extension/archive/master.zip
 designContest,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_designContest_extension/master/,https://github.com/open-contracting-extensions/ocds_designContest_extension/archive/master.zip
+document_publisher,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_document_publisher_extension/master/,https://github.com/open-contracting-extensions/ocds_document_publisher_extension/archive/master.zip
 documentation_details,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_documentation_extension/master/,https://github.com/open-contracting-extensions/ocds_documentation_extension/archive/master.zip
 enquiries,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/master/,https://github.com/open-contracting-extensions/ocds_enquiry_extension/archive/master.zip
 enquiries,2019-02-25,v1.1.4,https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.4/,https://api.github.com/repos/open-contracting-extensions/ocds_enquiry_extension/zipball/v1.1.4
 enquiries,2020-08-20,v1.1.5,https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.5/,https://api.github.com/repos/open-contracting-extensions/ocds_enquiry_extension/zipball/v1.1.5
 essentialAssets,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_essentialAssets_extension/master/,https://github.com/open-contracting-extensions/ocds_essentialAssets_extension/archive/master.zip
 eu,,1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_eu_extension/1.1/,https://github.com/open-contracting-extensions/ocds_eu_extension/archive/1.1.zip
+exclusionGrounds,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_exclusionGrounds_extension/master/,https://github.com/open-contracting-extensions/ocds_exclusionGrounds_extension/archive/master.zip
 extendsContractID,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_extendsContractID_extension/master/,https://github.com/open-contracting-extensions/ocds_extendsContractID_extension/archive/master.zip
 finance,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/master/,https://github.com/open-contracting-extensions/ocds_finance_extension/archive/master.zip
 guarantees,,master,https://raw.githubusercontent.com/contratacionesabiertas/ocds_guarantees_extension/master/,https://github.com/contratacionesabiertas/ocds_guarantees_extension/archive/master.zip
@@ -77,9 +80,11 @@ selectionCriteria,,master,https://raw.githubusercontent.com/open-contracting-ext
 shareholders,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_shareholders_extension/master/,https://github.com/open-contracting-extensions/ocds_shareholders_extension/archive/master.zip
 shareholders,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_shareholders_extension/v1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_shareholders_extension/zipball/v1.1
 signatories,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/,https://github.com/open-contracting-extensions/ocds_contract_signatories_extension/archive/master.zip
+statistics,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_statistics_extension/master/,https://github.com/open-contracting-extensions/ocds_statistics_extension/archive/master.zip
 statusDetails,,master,https://gitlab.com/dncp-opendata/ocds_statusdetails_extension/-/raw/master/,https://gitlab.com/dncp-opendata/ocds_statusdetails_extension/-/archive/master/ocds_statusdetails_extension-master.zip
 subcontracting,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_subcontracting_extension/master/,https://github.com/open-contracting-extensions/ocds_subcontracting_extension/archive/master.zip
 submissionTerms,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_submissionTerms_extension/master/,https://github.com/open-contracting-extensions/ocds_submissionTerms_extension/archive/master.zip
+suitability,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_suitability_extension/master/,https://github.com/open-contracting-extensions/ocds_suitability_extension/archive/master.zip
 sustainability,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_sustainability_extension/master/,https://github.com/open-contracting-extensions/ocds_sustainability_extension/archive/master.zip
 tariffs,,1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_tariffs_extension/1.1/,https://github.com/open-contracting-extensions/ocds_tariffs_extension/archive/1.1.zip
 techniques,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_techniques_extension/master/,https://github.com/open-contracting-extensions/ocds_techniques_extension/archive/master.zip
@@ -88,3 +93,4 @@ tender_datePublished,,master,https://raw.githubusercontent.com/portaledcahn/ocds
 transaction_milestones,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_transactions_relatedMilestone_extension/master/,https://github.com/open-contracting-extensions/ocds_transactions_relatedMilestone_extension/archive/master.zip
 transaction_milestones,2017-05-09,v1.1,https://raw.githubusercontent.com/open-contracting-extensions/ocds_transactions_relatedMilestone_extension/v1.1/,https://api.github.com/repos/open-contracting-extensions/ocds_transactions_relatedMilestone_extension/zipball/v1.1
 unstructuredChanges,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_unstructuredChanges_extension/master/,https://github.com/open-contracting-extensions/ocds_unstructuredChanges_extension/archive/master.zip
+withheldInformation,,master,https://raw.githubusercontent.com/open-contracting-extensions/ocds_withheldInformation_extension/master/,https://github.com/open-contracting-extensions/ocds_withheldInformation_extension/archive/master.zip
