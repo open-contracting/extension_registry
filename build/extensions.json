@@ -134,12 +134,12 @@
       "category": "contract",
       "core": false,
       "description": {
-        "en": "In some cases, a single contracting process involves multiple buyers (for example, a framework that different organizations can buy from). In these cases, the multiple buyers extension can be used to specify a distinct buyer for each contract. "
+        "en": "Adds buyer fields to the award and contract objects to indicate the buyer(s) for an individual award or contract, if different from the buyer(s) involved in the contracting process as a whole."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/contract_buyer/",
       "id": "contract_buyer",
       "name": {
-        "en": "Multiple buyers - contract level"
+        "en": "Buyer per award or contract"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_buyer_extension/master/"
     },
@@ -207,6 +207,19 @@
         "en": "Design contest"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_designContest_extension/master/"
+    },
+    {
+      "category": "document",
+      "core": false,
+      "description": {
+        "en": "Adds a publisher field to the document object."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_document_publisher_extension",
+      "id": "document_publisher",
+      "name": {
+        "en": "Document publisher"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_document_publisher_extension/master/"
     },
     {
       "category": "document",
@@ -680,7 +693,7 @@
       "category": "contract",
       "core": false,
       "description": {
-        "en": "Adds a signatories array to the contract object. Use when there are additional signatories to the contract, other than the buyer and supplier."
+        "en": "Adds a signatories array to the contract object, for when the signatories differ from the buyer for the contracting process and the suppliers for the award."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/signatories/",
       "id": "signatories",
@@ -706,7 +719,7 @@
       "category": "award",
       "core": false,
       "description": {
-        "en": "Adds an object for information about the parts of the contract that the supplier will subcontract to third parties."
+        "en": "Adds objects for information about the terms governing subcontracting and the parts of the contract that tenderers and suppliers will subcontract to third parties."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/subcontracting/",
       "id": "subcontracting",
@@ -758,7 +771,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds fields to the tender and lot objects to describe the use of techniques, such as framework agreements, dynamic purchasing systems and electronic auctions."
+        "en": "Adds fields to the tender, lot and lot group objects to describe the use of techniques, such as framework agreements, dynamic purchasing systems and electronic auctions."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/techniques/",
       "id": "techniques",
