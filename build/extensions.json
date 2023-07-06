@@ -274,6 +274,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_eu_extension/1.1/"
     },
     {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds an object to describe the criteria to exclude tenderers from participating in a contracting process."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_exclusionGrounds_extension",
+      "id": "exclusionGrounds",
+      "name": {
+        "en": "Exclusion grounds"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_exclusionGrounds_extension/master/"
+    },
+    {
       "category": "contract",
       "core": false,
       "description": {
@@ -703,6 +716,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/"
     },
     {
+      "category": "release",
+      "core": false,
+      "description": {
+        "en": "Adds a top-level statistics array to describe statistics about the contracting process."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_statistics_extension",
+      "id": "statistics",
+      "name": {
+        "en": "Statistics"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_statistics_extension/master/"
+    },
+    {
       "category": "",
       "core": false,
       "description": {
@@ -740,6 +766,19 @@
         "en": "Submission terms"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_submissionTerms_extension/master/"
+    },
+    {
+      "category": "tender",
+      "core": false,
+      "description": {
+        "en": "Adds a suitability object to the tender, lot and lot group objects to describe their suitability to different types of tenderers."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_suitability_extension",
+      "id": "suitability",
+      "name": {
+        "en": "Suitability"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_suitability_extension/master/"
     },
     {
       "category": "tender",
@@ -831,6 +870,19 @@
         "en": "Unstructured changes"
       },
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_unstructuredChanges_extension/master/"
+    },
+    {
+      "category": "release",
+      "core": false,
+      "description": {
+        "en": "Adds a top-level withheld information array to describe items of information whose publication is temporarily or permanently withheld."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_withheldInformation_extension",
+      "id": "withheldInformation",
+      "name": {
+        "en": "Withheld information"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_withheldInformation_extension/master/"
     }
   ]
 }
