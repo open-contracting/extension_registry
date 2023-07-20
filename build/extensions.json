@@ -14,6 +14,19 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_additionalContactPoints_extension/master/"
     },
     {
+      "category": "amendment",
+      "core": false,
+      "description": {
+        "en": "Adds a field to the amendment object to classify the rationale for the amendment."
+      },
+      "documentation_url": "https://github.com/open-contracting-extensions/ocds_amendment_rationale_classifications_extension",
+      "id": "amendment_rationale_classifications",
+      "name": {
+        "en": "Amendment rationale classifications"
+      },
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_amendment_rationale_classifications_extension/master/"
+    },
+    {
       "category": "tender",
       "core": false,
       "description": {
