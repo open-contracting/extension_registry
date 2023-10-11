@@ -1,5 +1,6 @@
 -r requirements.txt
 jsonschema
 pytest
+requests
 rfc3339-validator
 rfc3986-validator
