@@ -50,7 +50,7 @@ The CSV columns are:
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_dev.txt
 ```
 
 To add a new extension to `extensions.csv` and `extension_versions.csv`, run, for example:
