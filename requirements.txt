@@ -16,8 +16,6 @@ charset-normalizer==3.3.0
     # via requests
 click==8.1.7
     # via -r requirements.in
-exceptiongroup==1.1.3
-    # via cattrs
 idna==3.4
     # via requests
 json-merge-patch==0.2
@@ -30,7 +28,6 @@ platformdirs==3.11.0
     # via requests-cache
 requests==2.31.0
     # via
-    #   -r requirements.in
     #   ocdsextensionregistry
     #   requests-cache
 requests-cache==1.1.0
@@ -39,11 +36,9 @@ requests-cache==1.1.0
     #   ocdsextensionregistry
 six==1.16.0
     # via url-normalize
-typing-extensions==4.8.0
-    # via cattrs
 url-normalize==1.4.3
     # via requests-cache
-urllib3==2.0.6
+urllib3==2.0.7
     # via
     #   requests
     #   requests-cache
