@@ -466,7 +466,7 @@
       "name": {
         "en": "Organization classification"
       },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_organizationClassification_extension/1.1/"
+      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_organizationClassification_extension/master/"
     },
     {
       "category": "tender",
