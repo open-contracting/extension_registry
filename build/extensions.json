@@ -641,7 +641,7 @@
       "category": "tender",
       "core": false,
       "description": {
-        "en": "Adds fields to the Tender and Lot objects to describe the options for the renewal of contracts."
+        "en": "Adds fields to describe the options for the renewal of contracts."
       },
       "documentation_url": "https://extensions.open-contracting.org/en/extensions/renewal/",
       "id": "renewal",
