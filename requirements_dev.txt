@@ -62,7 +62,7 @@ pyrsistent==0.18.0
     # via jsonschema
 pytest==7.2.0
     # via -r requirements_dev.in
-requests==2.31.0
+requests==2.32.0
     # via
     #   -r requirements.txt
     #   -r requirements_dev.in
