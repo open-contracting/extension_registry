@@ -5,7 +5,6 @@ attrs==23.1.0
     #   -r requirements.txt
     #   cattrs
     #   jsonschema
-    #   pytest
     #   requests-cache
 cattrs==23.1.2
     # via
@@ -45,13 +44,13 @@ platformdirs==3.11.0
     # via
     #   -r requirements.txt
     #   requests-cache
-pluggy==1.0.0
+pluggy==1.5.0
     # via pytest
 pyparsing==3.0.6
     # via packaging
 pyrsistent==0.18.0
     # via jsonschema
-pytest==7.2.0
+pytest==8.3.2
     # via -r requirements_dev.in
 requests==2.32.3
     # via
@@ -59,7 +58,7 @@ requests==2.32.3
     #   -r requirements_dev.in
     #   ocdsextensionregistry
     #   requests-cache
-requests-cache==1.1.0
+requests-cache==1.2.1
     # via
     #   -r requirements.txt
     #   ocdsextensionregistry
