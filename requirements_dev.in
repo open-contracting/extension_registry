@@ -1,5 +1,6 @@
 -r requirements.txt
 jsonschema
+pre-commit
 pytest
 requests
 rfc3339-validator
