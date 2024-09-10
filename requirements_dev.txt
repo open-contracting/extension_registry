@@ -14,20 +14,12 @@ certifi==2024.7.4
     # via
     #   -r requirements.txt
     #   requests
-cfgv==3.4.0
-    # via pre-commit
 charset-normalizer==3.3.0
     # via
     #   -r requirements.txt
     #   requests
 click==8.1.7
     # via -r requirements.txt
-distlib==0.3.8
-    # via virtualenv
-filelock==3.15.4
-    # via virtualenv
-identify==2.6.0
-    # via pre-commit
 idna==3.7
     # via
     #   -r requirements.txt
@@ -44,8 +36,6 @@ jsonref==1.1.0
     #   ocdsextensionregistry
 jsonschema==4.2.1
     # via -r requirements_dev.in
-nodeenv==1.9.1
-    # via pre-commit
 ocdsextensionregistry==0.3.8
     # via -r requirements.txt
 packaging==21.3
@@ -54,19 +44,14 @@ platformdirs==3.11.0
     # via
     #   -r requirements.txt
     #   requests-cache
-    #   virtualenv
 pluggy==1.5.0
     # via pytest
-pre-commit==3.8.0
-    # via -r requirements_dev.in
 pyparsing==3.0.6
     # via packaging
 pyrsistent==0.18.0
     # via jsonschema
 pytest==8.3.2
     # via -r requirements_dev.in
-pyyaml==6.0.2
-    # via pre-commit
 requests==2.32.3
     # via
     #   -r requirements.txt
@@ -95,5 +80,3 @@ urllib3==2.2.2
     #   -r requirements.txt
     #   requests
     #   requests-cache
-virtualenv==20.26.3
-    # via pre-commit
