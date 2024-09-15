@@ -18,7 +18,7 @@ json-merge-patch==0.2
     # via ocdsextensionregistry
 jsonref==1.1.0
     # via ocdsextensionregistry
-ocdsextensionregistry==0.3.8
+ocdsextensionregistry==0.4.0
     # via -r requirements.in
 platformdirs==3.11.0
     # via requests-cache
