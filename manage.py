@@ -91,9 +91,7 @@ def cli():
 @cli.command()
 @click.argument("url")
 def add(url):
-    """
-    Add a new extension and its live version to the registry.
-    """
+    """Add a new extension and its live version to the registry."""
     parsed = urlsplit(url)
     if parsed.netloc not in ("github.com", "gitlab.com"):
         raise click.BadParameter("URL must be of the form https://github.com/org/repo or https://gitlab.com/org/repo")
@@ -130,9 +128,7 @@ def add(url):
 
 @cli.command()
 def refresh():
-    """
-    Auto-discover and add new versions of registered extensions.
-    """
+    """Auto-discover and add new versions of registered extensions."""
     versions = []
     tags = defaultdict(list)
 
@@ -177,9 +173,7 @@ def refresh():
 
 @cli.command()
 def build():
-    """
-    Compile build/extensions.json.
-    """
+    """Compile build/extensions.json."""
     with open(os.path.join(directory, "build", "extensions.json"), "w") as f:
         f.write(do_build())
 
