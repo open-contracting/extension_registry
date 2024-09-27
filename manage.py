@@ -23,7 +23,7 @@ def do_build():
         reader = csv.DictReader(f)
         for row in reader:
             # Ignore v1.1 and v1.1.1 versions, as these are superseded by versions using the new extension.json format.
-            if row["Version"] not in ("v1.1", "v1.1.1"):
+            if row["Version"] not in {"v1.1", "v1.1.1"}:
                 extension_versions[row["Id"]].append(row)
 
     # Collect the extension versions to build.
@@ -93,7 +93,7 @@ def cli():
 def add(url):
     """Add a new extension and its live version to the registry."""
     parsed = urlsplit(url)
-    if parsed.netloc not in ("github.com", "gitlab.com"):
+    if parsed.netloc not in {"github.com", "gitlab.com"}:
         raise click.BadParameter("URL must be of the form https://github.com/org/repo or https://gitlab.com/org/repo")
 
     name = url.rsplit("/", 1)[-1]
