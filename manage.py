@@ -20,8 +20,7 @@ def do_build():
     # Collect the possible extension versions to build.
     extension_versions = defaultdict(list)
     with open(directory / "extension_versions.csv") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
+        for row in csv.DictReader(f):
             # Ignore v1.1 and v1.1.1 versions, as these are superseded by versions using the new extension.json format.
             if row["Version"] not in {"v1.1", "v1.1.1"}:
                 extension_versions[row["Id"]].append(row)
@@ -29,8 +28,7 @@ def do_build():
     # Collect the extension versions to build.
     extensions = []
     with open(directory / "extensions.csv") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
+        for row in csv.DictReader(f):
             versions = extension_versions[row["Id"]]
 
             # Prefer frozen versions to live versions.
@@ -106,8 +104,7 @@ def add(url):
         download_url = f"{url}/-/archive/master/{name}-master.zip"
 
     with open(directory / "extension_versions.csv") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
+        for row in csv.DictReader(f):
             if row["Base URL"] == base_url:
                 raise click.BadParameter(f'Extension version with Base URL "{base_url}" already exists.')
 
@@ -143,8 +140,7 @@ def refresh():
     }
 
     with open(directory / "extension_versions.csv") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
+        for row in csv.DictReader(f):
             version = ExtensionVersion(row)
             if version.date:
                 tags[version.id].append(version.version)
