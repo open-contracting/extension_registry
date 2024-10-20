@@ -153,9 +153,8 @@ def refresh():
         writer = csv.writer(f, lineterminator="\n")
         for version in versions:
             name = version.repository_full_name
-            url = f"https://api.github.com/repos/{name}/releases?per_page=100"
 
-            response = session.get(url)
+            response = session.get(f"https://api.github.com/repos/{name}/releases?per_page=100")
             response.raise_for_status()
 
             for release in response.json():
