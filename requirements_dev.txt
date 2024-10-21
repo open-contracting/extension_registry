@@ -35,7 +35,7 @@ jsonref==1.1.0
     # via
     #   -r requirements.txt
     #   ocdsextensionregistry
-ocdsextensionregistry==0.4.0
+ocdsextensionregistry==0.5.0
     # via -r requirements.txt
 packaging==21.3
     # via pytest
