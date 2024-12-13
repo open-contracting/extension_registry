@@ -430,19 +430,6 @@
       "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_metrics_extension/1.1/"
     },
     {
-      "category": "milestones",
-      "core": true,
-      "description": {
-        "en": "Documents at the milestone level were deprecated in OCDS 1.1. This extension re-introduces the ability to attach documents to each individual milestone."
-      },
-      "documentation_url": "https://extensions.open-contracting.org/en/extensions/milestone_documents/",
-      "id": "milestone_documents",
-      "name": {
-        "en": "Milestone documents"
-      },
-      "url": "https://raw.githubusercontent.com/open-contracting-extensions/ocds_milestone_documents_extension/v1.1.5/"
-    },
-    {
       "category": "tender",
       "core": false,
       "description": {
