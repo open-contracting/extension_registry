@@ -5,6 +5,7 @@ import os
 import re
 from collections import defaultdict
 from datetime import timedelta
+from operator import itemgetter
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -37,7 +38,7 @@ def do_build():
                 versions = frozen_versions
 
             # Get the most recent frozen version. We presently have no strategy for choosing between live versions.
-            version = max(versions, key=lambda version: version["Date"])
+            version = max(versions, key=itemgetter("Date"))
 
             response = session.get(version["Base URL"] + "extension.json")
             response.raise_for_status()
