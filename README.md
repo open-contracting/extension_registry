@@ -23,8 +23,8 @@ This file has one extension per row. The row order has no effect, but alphabetic
 
 The CSV columns are:
 
-* `Id` (required): A unique identifier for the extension, composed of underscores and lowercase and uppercase ASCII letters. If the extension follows the [extension naming guidance](https://github.com/open-contracting/standard_extension_template#naming-extension-repositories), this `Id` can be the extension repository's name, without the `ocds_` prefix and `_extension` suffix.
-*  `Category`: The [standard documentation](https://standard.open-contracting.org/) lists, in specific locations, extensions that target a specific part of the schema. Extensions may set a [category](/schema/extensions-schema.json) to appear in one of these lists.
+* `Id` (required): A unique identifier for the extension, composed of underscores and lowercase and uppercase ASCII letters. If the extension follows the [repository name guidance](https://extensions.open-contracting.org/en/publishers/#repository-name), this `Id` can be the repository name without the `ocds_` prefix and `_extension` suffix.
+*  `Category`: The [standard documentation](https://standard.open-contracting.org/) lists, in specific locations, extensions that target a specific part of the schema. Extensions may set a [category](https://github.com/open-contracting/standard-maintenance-scripts/blob/main/schema/extension-schema.json) to appear in one of these lists.
 *  `Core`: The standard documentation defines [core extensions](https://standard.open-contracting.org/latest/en/extensions/), and the standard's [governance process](https://standard.open-contracting.org/latest/en/support/governance/) determines whether an extension is core.
 
 ### [`extension_versions.csv`](/extension_versions.csv)
