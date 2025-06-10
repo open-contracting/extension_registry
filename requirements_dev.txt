@@ -53,7 +53,7 @@ pyparsing==3.0.6
     # via packaging
 pytest==8.3.2
     # via -r requirements_dev.in
-requests==2.32.3
+requests==2.32.4
     # via
     #   -r requirements.txt
     #   -r requirements_dev.in
