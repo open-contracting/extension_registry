@@ -22,7 +22,7 @@ ocdsextensionregistry==0.5.0
     # via -r requirements.in
 platformdirs==3.11.0
     # via requests-cache
-requests==2.32.3
+requests==2.32.4
     # via
     #   ocdsextensionregistry
     #   requests-cache
