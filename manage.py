@@ -70,8 +70,7 @@ def _sort(filename):
 
     with open(directory / filename, "w") as f:
         f.write(fieldnames)
-        for row in sorted(rows):
-            f.write(row)
+        f.writelines(sorted(rows))
 
 
 def _write(filename, row):
