@@ -37,7 +37,7 @@ jsonref==1.1.0
     #   ocdsextensionregistry
 ocdsextensionregistry==0.5.0
     # via -r requirements.txt
-packaging==21.3
+packaging==26.0
     # via pytest
 platformdirs==3.11.0
     # via
@@ -49,9 +49,9 @@ pydantic==2.9.2
     # via -r requirements_dev.in
 pydantic-core==2.23.4
     # via pydantic
-pyparsing==3.0.6
-    # via packaging
-pytest==8.3.2
+pygments==2.20.0
+    # via pytest
+pytest==9.0.3
     # via -r requirements_dev.in
 requests==2.33.0
     # via
