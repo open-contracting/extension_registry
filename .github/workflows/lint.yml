@@ -8,5 +8,4 @@ jobs:
     secrets:
       personal-access-token: ${{ secrets.PAT }}
     with:
-      python-version: '3.12'
       ocds-schema-exceptions: extensions-schema.json,extension_versions-schema.json
