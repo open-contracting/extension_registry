@@ -1,6 +1,6 @@
 import csv
-import os
 from collections import defaultdict
+from pathlib import Path
 from typing import Literal
 
 import requests
@@ -63,7 +63,7 @@ def test_registry():
             else:
                 seen[key] = set()
 
-        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", filename)) as f:
+        with (Path(__file__).resolve().parent.parent / filename).open() as f:
             reader = csv.DictReader(f)
             for row in reader:
                 extension_id = row["Id"]

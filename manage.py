@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import csv
 import json
-import os
 import re
 from collections import defaultdict
 from datetime import timedelta
@@ -20,7 +19,7 @@ session = requests_cache.CachedSession(expire_after=timedelta(hours=1))
 def do_build():
     # Collect the possible extension versions to build.
     extension_versions = defaultdict(list)
-    with open(directory / "extension_versions.csv") as f:
+    with (directory / "extension_versions.csv").open() as f:
         for row in csv.DictReader(f):
             # Ignore v1.1 and v1.1.1 versions, as these are superseded by versions using the new extension.json format.
             if row["Version"] not in {"v1.1", "v1.1.1"}:
@@ -28,7 +27,7 @@ def do_build():
 
     # Collect the extension versions to build.
     extensions = []
-    with open(directory / "extensions.csv") as f:
+    with (directory / "extensions.csv").open() as f:
         for row in csv.DictReader(f):
             versions = extension_versions[row["Id"]]
 
@@ -64,17 +63,17 @@ def do_build():
 
 
 def _sort(filename):
-    with open(directory / filename) as f:
+    with (directory / filename).open() as f:
         fieldnames = next(f)
         rows = f.readlines()
 
-    with open(directory / filename, "w") as f:
+    with (directory / filename).open("w") as f:
         f.write(fieldnames)
         f.writelines(sorted(rows))
 
 
 def _write(filename, row):
-    with open(directory / filename, "a") as f:
+    with (directory / filename).open("a") as f:
         writer = csv.writer(f, lineterminator="\n")
         writer.writerow(row)
 
@@ -103,7 +102,7 @@ def add(url):
         base_url = url + "/-/raw/master/"
         download_url = f"{url}/-/archive/master/{name}-master.zip"
 
-    with open(directory / "extension_versions.csv") as f:
+    with (directory / "extension_versions.csv").open() as f:
         for row in csv.DictReader(f):
             if row["Base URL"] == base_url:
                 raise click.BadParameter(f'Extension version with Base URL "{base_url}" already exists.')
@@ -112,7 +111,7 @@ def add(url):
     if default:
         default = default[1]
 
-    with open(directory / "schema" / "extensions-schema.json") as f:
+    with (directory / "schema" / "extensions-schema.json").open() as f:
         choices = json.load(f)["properties"]["Category"]["enum"]
 
     _id = click.prompt("Id", default=default)
@@ -139,7 +138,7 @@ def refresh():
         "process_title": {"v1.1", "v1.1.1"},
     }
 
-    with open(directory / "extension_versions.csv") as f:
+    with (directory / "extension_versions.csv").open() as f:
         for row in csv.DictReader(f):
             version = ExtensionVersion(row)
             if version.date:
@@ -149,7 +148,7 @@ def refresh():
             else:
                 click.echo(f"{version.base_url} not supported, skipping...")
 
-    with open(directory / "extension_versions.csv", "a") as f:
+    with (directory / "extension_versions.csv").open("a") as f:
         writer = csv.writer(f, lineterminator="\n")
         for version in versions:
             name = version.repository_full_name
@@ -169,7 +168,7 @@ def refresh():
 @cli.command()
 def build():
     """Compile build/extensions.json."""
-    with open(os.path.join(directory, "build", "extensions.json"), "w") as f:
+    with (directory / "build" / "extensions.json").open("w") as f:
         f.write(do_build())
 
 
